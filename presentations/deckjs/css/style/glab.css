@@ -1,0 +1,116 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.25em;
+  background: #fff;
+}
+.deck-container .slide {
+  background: #fff;
+}
+.deck-container h1 {
+  color: #000;
+}
+.deck-container h2 {
+  color: #911A20;
+  border-bottom-color: #ccc;
+  margin-bottom: 0.5em;
+}
+.deck-container h3 {
+  color: #888;
+  margin-bottom: 0;
+}
+.deck-container tt {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.deck-container pre {
+  border-color: #ccc;
+}
+.deck-container code {
+  color: #888;
+}
+.deck-container blockquote {
+  font-size: 1em;
+  font-style: italic;
+  padding: 0.5em 1.0em;
+  color: #000;
+}
+.deck-container blockquote p {
+  margin: 0;
+}
+.deck-container blockquote cite {
+  font-size: .5em;
+  font-style: normal;
+  font-weight: bold;
+  color: #888;
+}
+.deck-container a, .deck-container a:hover, .deck-container a:focus, .deck-container a:active, .deck-container a:visited {
+  color: #911A20;
+  text-decoration: none;
+}
+.deck-container a:hover, .deck-container a:focus {
+  text-decoration: underline;
+}
+.deck-container .deck-prev-link, .deck-container .deck-next-link {
+  background: #ccc;
+  font-family: serif;
+}
+.deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
+  color: #fff;
+}
+.deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
+  background: #911A20;
+  text-decoration: none;
+}
+.deck-container .deck-status {
+  font-size: 0.6666em;
+}
+.deck-container.deck-menu .slide {
+  background: #eee;
+}
+.deck-container.deck-menu .deck-current, .no-touch .deck-container.deck-menu .slide:hover {
+  background: #ddf;
+}
+.deck-container li {
+  padding: 0.1em 0;
+}
+.deck-container ul ul, .deck-container ul ol, .deck-container ol ul, .deck-container ol ol {
+  margin-bottom: 0;
+}
+
+.deck-container .left {
+  margin-left: 0;
+}
+.deck-container .right {
+  margin-left: auto;
+  margin-right: 0;
+}
+.deck-container .two-columns .column {
+  width: 50%;
+}
+.deck-container .two-columns .left {
+  float: left;
+  clear: left;
+}
+.deck-container .two-columns .right {
+  float: right;
+  clear: right;
+}
+.deck-container .two-columns .span {
+  float: none;
+  clear: both;
+}
+
+.deck-container table td, .deck-container table th {
+  padding: 2mm;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.deck-container table img {
+  margin-bottom: 0px;
+  display: inline;
+}
+
+.deck-container .two-columns .column img {
+  margin: 0px;
+}

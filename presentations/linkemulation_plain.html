@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Presentation: ToMaTo - Link Emulation</title>
+	
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="deckjs/css/deck.core.css">
+	<link rel="stylesheet" href="deckjs/css/deck.goto.css">
+	<link rel="stylesheet" href="deckjs/css/deck.menu.css">
+	<link rel="stylesheet" href="deckjs/css/deck.navigation.css">
+	<link rel="stylesheet" href="deckjs/css/deck.status.css">
+	<link rel="stylesheet" href="deckjs/css/deck.hash.css">
+	<link rel="stylesheet" href="deckjs/css/deck.scale.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="deckjs/css/style/glab.css">
+	<link rel="stylesheet" id="transition-theme-link" href="deckjs/css/transition/fade.css" media="screen">
+	
+	<script src="deckjs/js/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<div class="slide" id="title-slide">
+	<h1>ToMaTo - Link Emulation</h1>
+</div>
+
+<div class="slide two-columns" id="topology-elements">
+	<h2>ToMaTo, Topology Management Tool</h2>
+	ToMaTo is topology-oriented, i.e. users build topologies for their experiments.
+	<img src="images/top.png" class="span" height="33%"/>
+	<div class="slide column left">
+		<h3>Devices</h3>
+		<ul>
+			<li>produce and consume data</li>
+			<li>can run software</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Connectors</h3>
+		<ul>
+			<li>forward and manipulate data</li>
+			<li>connect devices</li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Three kinds of devices</h3>
+		<ul>
+			<li>KVM devices</li>
+			<li>OpenVZ devices</li>
+			<li>Programmable devices</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Two kinds of connectors</h3>
+		<ul>
+			<li>VPN networks</li>
+			<li>External networks</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="slide" id="link-emulation">
+	<h2>Link emulation</h2>
+	<h3>Definition</h3>
+	<p>Link emulation is a term that defines methods to apply artificial characteristics or network links and path to a communication link.</p>
+	<div clas="slide">
+		<h3>Emulatable characteristics</h3>
+		<p>ToMaTo is able to emulate the following link characteristics for all VPN links in both directions (seperately):</p>
+		<ul>
+			<li class="slide">Delay</li>
+			<li class="slide">Jitter</li>
+			<li class="slide">Statistical delay distribution</li>
+			<li class="slide">Bandwidth limitation</li>
+			<li class="slide">Packet loss</li>
+			<li class="slide">Packet duplication</li>
+			<li class="slide">Packet corruption</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide" id="delay-jitter">
+	<h2>Delay and jitter</h2>
+	<h3>Delay</h3>
+	<p>Delay can be added to a link by buffering each packet for a certain time before processing it. Delay can be configured in milliseconds but also fractions can be specified. The resolution depends on the timer resolution of the kernel but is very accurate in general.</p>
+	<div class="slide">
+		<h3>Jitter</h3>
+		<p>Jitter is a deviation applied to the per packet delay. Like the delay, jitter can also be specified in milliseconds but also fractions will work. The meaning of the jitter value depends on the selected statistical delay distribution but the jitter is applied in an average-neutral way.</p>
+	</div>
+	<div class="slide">
+		<h3>Packet reordering</h3>
+		<p>Packet reordering can be a result of high jitter values. If a packet gets a high delay value and the next packet a low value due to jitter, the later packet could leave the buffer first.</p>
+	</div>
+</div>
+
+<div class="slide two-columns" id="delay-distributions">
+	<h2>Statistical delay distribution</h2>
+	<img src="images/distr.png" class="column right"/>
+	<div class="slide column left">
+		<h3>Uniform distribution</h3>
+		<ul>
+			<li>Default distribution</li>
+			<li>Values evenly distributed within <tt>&plusmn;jitter</tt></li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Normal distribution</h3>
+		<ul>
+			<li>Higher chance for values near delay</li>
+			<li>68% of values within <tt>&plusmn;jitter</tt></li>
+			<li>95% of values within <tt>&plusmn;2*jitter</tt></li>
+			<li>99% of values within <tt>&plusmn;3*jitter</tt></li>
+		</ul>
+	</div>
+	<div class="slide column left" style="clear:left;">
+		<h3>Pareto distribution</h3>
+		<ul>
+			<li>Power law</li>
+			<li>High chance for small delays, small chance for high delays</li>
+			<li>Average is configured delay, median is below</li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Paretonormal distribution</h3>
+		<ul>
+			<li>Combination of normal and pareto distribution</li>
+			<li>Good emulation of most existing links</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide two-columns" id="other-characteristics">
+	<h2>Other characteristics</h2>
+	<div class="slide column left">
+		<h3>Bandwidth limitation</h3>
+		<ul>
+			<li>limit the maximal data rate</li>
+			<li>configured in kilobits per second</li>
+			<li>default bandwidth limit is 10 MBits/sec</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Packet loss</h3>
+		<ul>
+			<li>chance for each packet to be lost (dropped)</li>
+			<li>configured in percent (5 means 5%)</li>
+			<li>optionally correlated</li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Packet duplication</h3>
+		<ul>
+			<li>chance for each packet to be duplicated</li>
+			<li>only one duplicate</li>
+			<li>duplicate counts a traffic</li>
+			<li>delay and jitter is applied seperately</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Packet corruption</h3>
+		<ul>
+			<li>chance for each packet to be corrupted</li>
+			<li>one random bit is flipped</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide" id="configuration">
+	<h2>Characteristics configuration</h2>
+	<img src="images/link_emulation.png" height="60%"/>
+	<p>The link emulation properties can be changed on the link properties page for each link. The link characteristics can even be changed for running connections.</p> 
+</div>
+
+<div class="slide" id="additive-characteristics">
+	<h2>Characteristics are additive</h2>
+	<h3>Characteristics are additive</h3>
+	The configured link emulation settings are applied additionally to the existing characteristics of the underlying link.
+	<ul>
+		<li>Delay is just added to the underlaying delay</li>
+		<li>Jitter values and distributions are combined to more complex distributions</li>
+		<li>Resulting bandwidth limit is the minimum of the existing and the configured limit</li>
+		<li>Chances for loss, duplication and corruption are inversely multiplied, i.e. <tt>p'=1-(1-p<sub>1</sub>)*(1-p<sub>2</sub>)</tt></li>
+	</ul>
+	<div class="slide">
+		<h3>Continous measurements</h3>
+		<p>To help users estimate the resulting link characteristics the links between all sites are continously measured and long-time statistics are provided.
+		<img src="images/physlinks.png" height="30%"/>
+	</div>
+</div>
+
+<div class="slide" id="complex-le">
+	<h2>Complex link emulation</h2>
+	<p>Sometimes a more complicated link emulation or traffic shaping is needed on links. This can be done by using a link with a device in the middle.</p>
+	<img src="images/complex_link_emul.png" class="slide" height="10%"/>
+	<div class="slide">
+		<h3>OpenVZ</h3>
+		<ul>
+			<li>filtering using the Linux kernel firewall</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>KVM</h3>
+		<ul>
+			<li>can run any custom filtering and link emulation software</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>Programmable devices</h3>
+		<ul>
+			<li>easy link emulation as a program</li>
+			<li>easy filtering as a program</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide" id="how-to-get">
+	<h2>Obtaining and contributing</h2>
+	<div class="slide">
+		<h3>How to get ToMaTo</h3>
+		<p>ToMaTo is Open-Source! It can be simply downloaded from the <a href="http://github.com/dswd/ToMaTo">Github page</a>. There is also a <a href="http://github.com/dswd/ToMaTo/wiki/Tomatoinstallation">step-by-step tutorial</a> on how to setup ToMaTo in a testbed. ToMaTo includes some nice features that make it pretty easy to install it in an experimental facility:</p>
+		<ul>
+			<li>All components packaged for debian (updates come automatically)</li>
+			<li>Multiple authentication plugins: LDAP, htaccess, SQL-Database, Planet-Lab, ...</li>
+			<li>Automatic checks and problem reports for the ToMaTo hosts</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>How to contribute to ToMaTo</h3>
+		<p>As an Open-Source project ToMaTo is open for hints and contributions.</p>
+		<ul>
+			<li>Github offers an easy way to fork the project and offer contributions as pull requests</li>
+			<li>The wiki is publically editable so everyone can help by adding to the documentation</li>
+			<li>The issue tracking system can be used for bug reports and feature requests</li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- for navigation extension -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- for status extension -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- for goto extension -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="number" name="slidenum" id="goto-slide">
+	<input type="submit" value="Go">
+</form>
+
+<!-- for hash extension -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<script src="deckjs/js/jquery-1.6.3.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="deckjs/js/deck.core.js"></script>
+<script src="deckjs/js/deck.menu.js"></script>
+<script src="deckjs/js/deck.goto.js"></script>
+<script src="deckjs/js/deck.status.js"></script>
+<script src="deckjs/js/deck.navigation.js"></script>
+<script src="deckjs/js/deck.hash.js"></script>
+<script src="deckjs/js/deck.scale.js"></script>
+
+<script><!-- 
+$(function() {$.deck('.slide');}); 
+//--></script>
+
+</body>
+</html>

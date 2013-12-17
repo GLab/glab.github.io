@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Presentation: ToMaTo - Overview</title>
+	
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="deckjs/css/deck.core.css">
+	<link rel="stylesheet" href="deckjs/css/deck.goto.css">
+	<link rel="stylesheet" href="deckjs/css/deck.menu.css">
+	<link rel="stylesheet" href="deckjs/css/deck.navigation.css">
+	<link rel="stylesheet" href="deckjs/css/deck.status.css">
+	<link rel="stylesheet" href="deckjs/css/deck.hash.css">
+	<link rel="stylesheet" href="deckjs/css/deck.scale.css">
+	<link rel="stylesheet" href="../deckjs/css/deck.core.css">
+	<link rel="stylesheet" href="../deckjs/css/deck.goto.css">
+	<link rel="stylesheet" href="../deckjs/css/deck.menu.css">
+	<link rel="stylesheet" href="../deckjs/css/deck.navigation.css">
+	<link rel="stylesheet" href="../deckjs/css/deck.status.css">
+	<link rel="stylesheet" href="../deckjs/css/deck.hash.css">
+	<link rel="stylesheet" href="../deckjs/css/deck.scale.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="deckjs/css/style/icsy.css">
+	<link rel="stylesheet" id="transition-theme-link" href="deckjs/css/transition/fade.css" media="screen">
+	<link rel="stylesheet" id="style-theme-link" href="../deckjs/css/style/icsy.css">
+	<link rel="stylesheet" id="transition-theme-link" href="../deckjs/css/transition/fade.css" media="screen">
+
+	<!-- Codemirror -->
+	<link rel="stylesheet" href="deckjs/codemirror/deck.codemirror.css">
+	<link rel="stylesheet" href="deckjs/codemirror/themes/default.css">
+	<link rel="stylesheet" href="../deckjs/codemirror/deck.codemirror.css">
+	<link rel="stylesheet" href="../deckjs/codemirror/themes/default.css">
+
+	<script src="deckjs/js/modernizr.custom.js"></script>
+	<script src="../deckjs/js/modernizr.custom.js"></script>
+</head>
+
+<body style="width:99%;height:99%">
+
+<div class="deck-container" style="height:95%">
+
+<div class="slide" id="title-slide">
+	<div><img src="images/icsy.gif" style="float: left"/><img src="images/tu-kl_logo.png" style="float: right; margin-top: 3mm"/></div>
+	<h1>ToMaTo</h1>
+	<h3><center>Topology Management Tool</center></h3>
+</div>
+
+<div class="slide two-columns" id="introduction">
+	<h2>Introduction</h2>
+	<p><em>ToMaTo is a topology-oriented control framework for virtual networking experiments.</em></p>
+	<div class="slide column left">
+		<h3>Control framework</h3>
+		<ul>
+			<li>Like Planet-Lab, Emulab, ...</li>
+			<li>Developed in the German-Lab project</li>
+			<li>Open-Source project (<a href="http://dswd.github.com/ToMaTo">hosted on Github</a>)</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Virtual networking experiments</h3>
+		<ul>
+			<li>Developed for networking experiments</li>
+			<li>E.g. networking research or software testing</li>
+			<li>All parts of the experiment setup are virtual</li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Topology-oriented</h3>
+		<ul>
+			<li>Basic abstraction: Network topology</li>
+			<li>Each experiment has its own topology</li>
+			<li>Topologies contain connected elements</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Advanced features</h3>
+		<ul>
+			<li>Direct console access</li>
+			<li>Link emulation</li>
+			<li>Packet capturing</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide two-columns" id="topology">
+	<h2>Topology</h2>
+	<div class="column left">
+		<img src="images/topology.png"/>
+	</div>
+	<div class="slide column right">
+		<h3>Example</h3>
+		<ul>
+			<li>One central server</li>
+			<li>4 clients, connected with 2 switches</li>
+			<li>Internet connected to server</li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Graphical representation</h3>
+		<ul>
+			<li>Icons show element type</li>
+			<li>Colored icons show virtualization technology</li>
+			<li>Link color shows network segments</li>
+			<li>Link style shows link attributes</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Per Topology</h3>
+		<ul>
+			<li>Accounting</li>
+			<li>Permissions</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide two-columns" id="vm_elements">
+	<h2>VM Elements</h2>
+	<div class="column left">
+		<div class="slide">
+			<h3>KVM</h3>
+			<ul>
+				<li>Full virtualization</li>
+				<li>Integrated into Linux Kernel</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h3>OpenVZ</h3>
+			<ul>
+				<li>Container virtualization</li>
+				<li>Added to Linux Kernel via patch</li>
+			</ul>
+		</div>
+	</div>
+	<div class="column right">
+		<div class="slide">
+			<h3>Scripts</h3>
+			<ul>
+				<li>Programming language virtualization</li>
+				<li>Installed as software</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h3>Additional elements</h3>
+			<ul>
+				<li>Easy to add more</li>
+				<li>Planned: VirtualBox, LXC</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="slide" id="vm_elements_features">
+	<h2>VM Elements - Features</h2>
+	<center><table>
+		<tr><th></th>				<th>KVM</th>			<th>OpenVZ</th>			<th>Scripts</th></tr>
+		<tr><th># per node</th>			<td>~20</td>			<td>~100</td>			<td>~1000</td></tr>
+		<tr><th>any x86 OS</th>			<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/cross.png"/></td></tr>
+		<tr><th>Linux OS</th>			<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td></tr>
+		<tr><th>Kernel space</th>		<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td>(<img src="images/tick.png"/>)</td></tr>
+		<tr><th>Console support</th>		<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>Mouse/Keyboard input</th>	<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td></tr>
+		<tr><th>Layer2 connectivity</th>	<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>Interface configuration</th>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+	</table></center>
+</div>
+
+<div class="slide" id="repy">
+	<h2>Repy scripts</h2>
+	<h3>Repy</h3>
+	<ul>
+		<li>Restricted Python (Sandbox)</li>
+		<li>Technology from Seattle testbed</li>
+		<li>Modified for ToMaTo</li>
+		<li>Functions for receiving and sending raw ethernet packages</li>
+	</ul>
+	<div class="slide">
+		<h3>Code sample</h3>
+		<div><textarea class="code" mode="python">
+packet = tuntap_read("eth0", timeout=None)
+ethernet = ethernet_decode(packet)
+echo("%s -> %s: %d bytes\n" % (ethernet.src, ethernet.dst, len(packet))
+tuntap_send("eth1", packet)</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<h3>Library</h3>
+		<ul>
+			<li>Basic protocols implemented: Ethernet, IPv4, TCP, UDP and ICMP</li>
+			<li>Even some higher protocols: DHCP and DNS</li>
+			<li>Examples for: NAT router, DHCP server, DNS server, Switch, ...</li>
+			<li>Can be extended within the language</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide" id="network_elements">
+	<h2>Network Elements</h2>
+	<h3>VPN: Tinc</h3>
+	<ul>
+		<li>Full mesh VPN without server</li>
+		<li>Fully contained, virtual network</li>
+		<li>Cross-site layer 2 connectivity</li>
+		<li>Open endpoints allow federation</li>
+	</ul>
+	<div class="slide">
+		<h3>Tunnel: VTun</h3>
+		<ul>
+			<li>Layer 2 tunnel over UDP</li>
+			<li>Open endpoints allow federation</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>External networks</h3>
+		<ul>
+			<li>Bridge into local network segments</li>
+			<li>E.g. Internet or local research network</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide" id="editor">
+	<h2>Webfrontend - Editor</h2>
+	<img src="images/editor1.png"/>
+</div>
+
+<div class="slide" id="usage">
+	<h2>Webfrontend - Usage Statistics</h2>
+	<img src="images/stats.png"/>
+</div>
+
+<div class="slide two-columns" id="console">
+	<h2>Console Access</h2>
+	<div class="column left">
+		<img src="images/vnc1.png" width="70%"/>
+	</div>
+	<div class="column right">
+		<img src="images/vnc2.png" width="70%"/>
+	</div>
+	<div class="column right">
+	<p/>
+	<h3>Multiple VNC options</h3>
+	<ul>
+		<li>HTML 5</li>
+		<li>Java applet</li>
+		<li>Client software</li>
+	</ul>
+	</div>
+</div>
+
+<div class="slide two-columns" id="link_emulation">
+	<h2>Link Emulation</h2>
+	<div class="column left">
+		<img src="images/link_emulation.png"/>
+	</div>
+	<div class="slide column right">
+		<h3>Properties</h3>
+		<ul>
+			<li>Bandwidth</li>
+			<li>Latency</li>
+			<li>Jitter</li>
+			<li>Packet loss</li>
+			<li>Corruption &amp; duplication</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Statistical distributions</h3>
+		<img src="images/delay_distributions.png" width="50%"/>
+	</div>
+</div>
+
+<div class="slide two-columns" id="packet_capturing">
+	<h2>Packet Capturing</h2>
+	<div class="column left">
+		<img src="images/packet_capturing.png"/>
+		<p/>
+		<div class="slide">
+			<h3>Properties</h3>
+			<ul>
+				<li>Captures packages on the wire</li>
+				<li>Direct filtering</li>
+				<li>Format: Pcap, (compatible with Wireshark)</li>
+				<li>Two modes: Download, Live capture</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slide column right">
+		<h3>Cloudshark</h3>
+		<p>Online tool for packet analysis</p>
+		<img src="images/cloudshark.png"/>
+	</div>
+</div>
+
+<div class="slide two-columns" id="structure">
+	<h2>ToMaTo Structure</h2>
+	<div class="column left">
+		<img src="images/structure.png"/>
+		<p/>
+	</div>
+	<div class="slide column right">
+		<h3>Facility hosts</h3>
+		<ul>
+			<li>Running the ToMaTo hostmanager</li>
+			<li>OS: Proxmox VE + additional software</li>
+			<li>Organized in sites</li>
+			<li>No need for layer 2 connectivity</li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Backend component</h3>
+		<ul>
+			<li>Central component for orchestration</li>
+			<li>Controls hosts via XML-RPC</li>
+			<li>User management via authentication plugins</li>
+			<li>Provides XML-RPC interface</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Multiple frontends</h3>
+		<ul>
+			<li>Web-based, Command-line, Automated scripts, ...</li>
+			<li>Use common XML-RPC interface</li>
+			<li>More frontends possible</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide" id="glab_testbed">
+	<h2>German-Lab Testbed</h2>
+	<h3>Hardware in German-Lab</h3>
+	<ul>
+		<li>Strong nodes: 16 GB Ram, 2 Quad-Cores, 4 Gigabit LAN</li>
+		<li>59 nodes in Kaiserslautern</li>
+		<li>25 nodes in Würzburg, Darmstadt, Karlsruhe and Munich each</li>
+	</ul>
+	<div class="slide">
+		<h3>ToMaTo in German-Lab</h3>
+		<ul>
+			<li>58 ToMaTo nodes in whole German-Lab</li>
+			<li>20 with newest ToMaTo version 3</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>Additional hardware and links</h3>
+		<ul>
+			<li>Multiple OpenFlow switches connected to ToMaTo in Würzburg</li>
+			<li>Gigabit link to GENI connected to ToMaTo in Kaiserslautern</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>Access policy</h3>
+		<ul>
+			<li>Access for academic users based on topic</li>
+			<li>Otherwise, just ask</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide two-columns" id="use_case_deep">
+	<h2>Use case: German-Lab DEEP</h2>
+	<div class="left column">
+		<img src="images/use_case_deep.png"/>
+	</div>
+	<div class="right column">
+		<div class="slide">
+		<h3>Scenario</h3>
+		<ul>
+			<li>Intrusion detection</li>
+			<li>Attack mitigation</li>
+			<li>Voip scenario</li>
+		</ul>
+		</div>
+		<div class="slide">
+		<h3>ToMaTo usage</h3>
+		<ul>
+			<li>Very complex topology</li>
+			<li>Usage of smart middle-boxes</li>
+			<li>External software components</li>
+		</ul>
+		</div>
+	</div>
+</div>
+
+<div class="slide two-columns" id="use_case_igreen">
+	<h2>Use case: IGreen</h2>
+	<div class="left column">
+		<img src="images/use_case_igreen2.png" height="70%"/>
+	</div>
+	<div class="right column">
+		<div class="slide">
+		<h3>Scenario</h3>
+		<ul>
+			<li>Services for agriculture</li>
+			<li>Support for mobile devices</li>
+			<li>How does latency affect QoE</li>
+		</ul>
+		</div>
+		<div class="slide">
+		<p><img src="images/use_case_igreen1.png"/></p>
+		</div>
+		<div class="slide">
+		<h3>ToMaTo usage</h3>
+		<ul>
+			<li>Simple topology</li>
+			<li>Special template with Android emulator</li>
+			<li>Usage of link emulation</li>
+		</ul>
+		</div>
+	</div>
+</div>
+
+<div class="slide two-columns" id="use_case_malware">
+	<h2>Use case: Malware Analysis</h2>
+	<div class="left column">
+		<img src="images/use_case_malware2.png"/>
+		<p/>
+	</div>
+	<div class="right column">
+		<img src="images/use_case_malware1.png"/>
+	</div>
+	<div class="slide left column">
+		<h3>Scenario</h3>
+		<ul>
+			<li>Analysis of worm</li>
+			<li>Focus on network behavior</li>
+			<li>Fully contained topology</li>
+		</ul>
+	</div>
+	<div class="slide right column">
+		<h3>ToMaTo usage</h3>
+		<ul>
+			<li>Simple topology</li>
+			<li>No connection to Internet</li>
+			<li>Usage of packet capturing</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide" id="frameworks">
+	<h2>Framework Comparison</h2>
+	<center><table>
+		<tr><th></th>				<th>Planet-Lab</th>		<th>Emulab</th>			<th>Seattle</th>		<th>ToMaTo</th></tr>
+		<tr><th>Multiple sites</th>		<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>Physical hardware access</th>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/cross.png"/></td></tr>
+		<tr><th>End-System virtualization</th>		<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>Network virtualization</th>		<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>Layer 2 access</th>		<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>Link emulation</th>		<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>Packet capturing</th>		<td><img src="images/cross.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+		<tr><th>High traffic (>1 GBit)</th>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/cross.png"/></td></tr>
+		<tr><th>Resource profiles</th>		<td><img src="images/tick.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/cross.png"/></td>	<td><img src="images/tick.png"/></td></tr>
+	</table></center>
+</div>
+
+<div class="slide" id="status_plan">
+	<h2>Status &amp; Plan</h2>
+	<h3>Versions</h3>
+	<ul>
+		<li>Version 2.5 (mid 2012)</li>
+		<li>Version 3.0 (April 2013)</li>
+	</ul>
+	<div class="slide">
+	<h3>Planned element types &amp; features</h3>
+	<ul>
+		<li>VLan</li>
+		<li>Support for OpenStack (external work)</li>
+		<li>Data upload/download (Bachelor thesis)</li>
+		<li>Scripted Experiments, support for software testing</li>
+	</ul>
+	</div>
+</div>
+
+<div class="slide" id="info">
+	<h2>More Information</h2>
+	<h3>Websites</h3>
+	<ul>
+		<li>ToMaTo project: <a href="http://dswd.github.com/ToMaTo">dswd.github.com/ToMaTo</a></li>
+		<li>ToMaTo German-Lab testbed: <a href="http://tomato.german-lab.de">tomato.german-lab.de</a></li>
+		<li>ToMaTo German-Lab testbed (version 3): <a href="http://tomato3.german-lab.de">tomato3.german-lab.de</a></li>
+		<li>German-Lab: <a href="http://www.german-lab.de">www.german-lab.de</a></li>
+	</ul>
+	<div class="slide">
+		<h3>Publications</h3>
+		<ul>
+			<li><b>ToMaTo - a network experimentation tool</b><br/>
+			<em>Dennis Schwerdel, David Hock, Daniel Günther, Bernd Reuther, Paul Müller and Phuoc Tran-Gia</em><br/>
+			7th International ICST Conference on Testbeds and Research Infrastructures for the Development of Networks and Communities (TridentCom 2011), Shanghai, China, April 2011.</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>Contact</h3>
+		<p>
+		University of Kaiserslautern<br/>
+		Integrated Communication Systems Lab<br/>
+		Dennis Schwerdel<br/>
+		Email: <a href="mailto:schwerdel@informatik.uni-kl.de">schwerdel@informatik.uni-kl.de</a>
+		</p>
+	</div>
+</div>
+
+<!-- for navigation extension -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- for status extension -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- for goto extension -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="number" name="slidenum" id="goto-slide">
+	<input type="submit" value="Go">
+</form>
+
+<!-- for hash extension -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<script src="deckjs/js/jquery-1.6.3.min.js"></script>
+<script src="../deckjs/js/jquery-1.6.3.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="deckjs/js/deck.core.js"></script>
+<script src="deckjs/js/deck.menu.js"></script>
+<script src="deckjs/js/deck.goto.js"></script>
+<script src="deckjs/js/deck.status.js"></script>
+<script src="deckjs/js/deck.navigation.js"></script>
+<script src="deckjs/js/deck.hash.js"></script>
+<script src="deckjs/js/deck.scale.js"></script>
+<script src="../deckjs/js/deck.core.js"></script>
+<script src="../deckjs/js/deck.menu.js"></script>
+<script src="../deckjs/js/deck.goto.js"></script>
+<script src="../deckjs/js/deck.status.js"></script>
+<script src="../deckjs/js/deck.navigation.js"></script>
+<script src="../deckjs/js/deck.hash.js"></script>
+<script src="../deckjs/js/deck.scale.js"></script>
+
+<!-- Codemirror -->
+<script src="deckjs/codemirror/codemirror.js"></script>
+<script src="deckjs/codemirror/mode/python/python.js"></script>
+<script src="deckjs/codemirror/mode/clike/clike.js"></script>
+<script src="deckjs/codemirror/deck.codemirror.js"></script>
+<script src="../deckjs/codemirror/codemirror.js"></script>
+<script src="../deckjs/codemirror/mode/python/python.js"></script>
+<script src="../deckjs/codemirror/mode/clike/clike.js"></script>
+<script src="../deckjs/codemirror/deck.codemirror.js"></script>
+
+<script><!-- 
+$(function() {$.deck('.slide');}); 
+//--></script>
+
+</div>
+
+<div style="height:5%">
+<p style="margin:0;text-align:center">Dennis Schwerdel, University of Kaiserslautern</p>
+</div>
+
+</body>
+</html>

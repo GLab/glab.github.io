@@ -1,0 +1,8 @@
+# Folders #
+###########
+_site
+
+# Files #
+#########
+.project
+*~

@@ -1,3 +1,45 @@
-<html><body>
-<h1>This page is under construction</h1>
-</body></html>
+---
+layout: default
+title: Home
+category: home
+---
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<div class="jumbotron">
+  <h1>ToMaTo Testbed</h1>
+  <p class="lead"	>The Topology Management Tool (ToMaTo) is a topology-centric network testbed, giving researchers the possibility to run their software in specifically designed virtual networking topologies.</p> 
+</div>
+
+<div class="row">
+  <div class="features col-md-8 col-md-offset-2 col-xs-12">
+    <div id="carousel-features-captions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+{% for feature in site.data.featurecarousel %}
+        <li class="{% if forloop.first %}active{% endif %}" data-target="#carousel-features-captions" data-slide-to="{{ forloop.index0 }}"></li>
+{% endfor %}
+      </ol>
+      <div class="carousel-inner">
+{% for feature in site.data.featurecarousel %}
+        <div class="item {% if forloop.first %}active{% endif %}">
+          <img src="{{ feature.image }}">
+          <div class="carousel-caption">
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.text }}</p>
+          </div>
+        </div>
+{% endfor %}
+      </div>
+      <a class="left carousel-control" href="#carousel-features-captions" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-features-captions" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <p><a href="about" class="btn btn-primary btn-lg" role="button">Learn More!</a></p>
+</div>

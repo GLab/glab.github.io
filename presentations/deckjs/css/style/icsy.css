@@ -1,0 +1,170 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.25em;
+  background: #fff;
+  border-left: 8mm solid #2475B2;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+.deck-container .slide {
+  background: #fff;
+}
+.deck-container h1 {
+  color: #000;
+  position: relative !important;
+  clear: both;
+  -webkit-transform: none !important;
+  padding: 2cm 0 !important;
+}
+.deck-container h2 {
+  background-color: #CCE6FF;
+  background-image: url('icsy_top.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #000;
+  border-bottom: 0px;
+  margin-bottom: 0.5em;
+  width: 100%;
+  padding: 3mm;
+  padding-left: 169px;
+  position: relative;
+  left: -48px;
+}
+.deck-container.deck-menu h2 {
+  background-image: none;
+  padding: 1mm;
+  padding-left: 48px;
+  font-size: 3em;
+}
+.deck-container h3 {
+  color: #000;
+  margin-bottom: 0;
+}
+.deck-container tt {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.deck-container pre {
+  border-color: #ccc;
+}
+.deck-container code {
+  color: #000;
+}
+.deck-container blockquote {
+  font-size: 1em;
+  font-style: italic;
+  padding: 0.5em 1.0em;
+  color: #000;
+}
+.deck-container blockquote p {
+  margin: 0;
+}
+.deck-container blockquote cite {
+  font-size: .5em;
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
+}
+.deck-container a, .deck-container a:hover, .deck-container a:focus, .deck-container a:active, .deck-container a:visited {
+  color: #2475B2;
+  text-decoration: none;
+}
+.deck-container a:hover, .deck-container a:focus {
+  text-decoration: underline;
+}
+.deck-container.deck-menu {
+  overflow: auto;
+}
+.deck-container.deck-menu .deck-prev-link, .deck-container.deck-menu .deck-next-link {
+  display: none;
+}
+.deck-container .deck-prev-link, .deck-container .deck-next-link {
+  background: #ccc;
+  font-family: serif;
+}
+.deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
+  color: #fff;
+}
+.deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
+  background: #2475B2;
+  text-decoration: none;
+}
+.deck-container .deck-status {
+  font-size: 0.6666em;
+}
+.deck-container.deck-menu .slide {
+  background: #eee;
+}
+.deck-container.deck-menu .deck-current, .no-touch .deck-container.deck-menu .slide:hover {
+  background: #ddf;
+}
+.deck-container li:before {
+  content: '\0025B6'; /* BLACK RIGHT-POINTING TRIANGLE */
+  color: #2475B2;
+  position: relative;
+  left: -0.5em;
+}
+.deck-container li li:before {
+  content: '\0025A0'; /* BLACK SQUARE */
+}
+.deck-container li li li:before {
+  content: '\0025CF'; /* BLACK CIRCLE */
+}
+.deck-container li li li li:before {
+  content: '-';
+}
+.deck-container li {
+  padding: 0.1em 0;
+  list-style: none;
+}
+.deck-container ul ul, .deck-container ul ol, .deck-container ol ul, .deck-container ol ol {
+  margin-bottom: 0;
+}
+
+.deck-container .left {
+  margin-left: 0;
+}
+.deck-container .right {
+  margin-left: auto;
+  margin-right: 0;
+}
+.deck-container .two-columns .column {
+  width: 50%;
+}
+.deck-container .two-columns .left {
+  float: left;
+  clear: left;
+}
+.deck-container .two-columns .right {
+  float: right;
+  clear: right;
+}
+.deck-container .two-columns .span {
+  float: none;
+  clear: both;
+}
+
+.deck-container table td, .deck-container table th {
+  padding: 2mm;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.deck-container table img {
+  margin-bottom: 0px;
+  display: inline;
+}
+
+.deck-container .two-columns .column img {
+  margin: 0px;
+}
+
+.csstransforms .deck-container.deck-scale.deck-menu {
+  width: auto !important;
+}
+
+.deck-container {
+  width: auto;
+}

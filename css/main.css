@@ -1,0 +1,53 @@
+.carousel-inner .item {
+  padding-bottom: 120px;
+  text-align: center;
+  height: 500px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.carousel-control {
+  width: 20px !important;
+}
+
+.carousel-inner .carousel-caption, .carousel-control {
+  color: #000 !important;
+}
+
+.carousel-indicators li {
+  border: 1px solid #000 !important;
+}
+
+.carousel-indicators li.active {
+  background-color: #000 !important;
+}
+
+.carousel-control.left {
+  background-image: none !important;
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: none !important;
+}
+
+#sites img {
+  height: 4em;
+}
+
+.skip-xs {
+  height: 1em;
+}
+
+.skip-sm {
+  height: 2em;
+}
+
+.skip-md {
+  height: 4em;
+}
+
+.skip-lg {
+  height: 6em;
+}

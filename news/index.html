@@ -1,0 +1,53 @@
+---
+layout: default
+title: News
+category: news
+---
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+{% capture pagination %}
+{% if paginator.total_pages > 1 %}
+<ul class="pagination">
+  {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&laquo; Prev</a></li>
+   {% else %}
+    <li class="disabled"><a href="#">&laquo; Prev</a></li>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li class="active"><a href="#">{{ page }}</a></li>
+    {% elsif page == 1 %}
+      <li><a href="{{ '/news' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% else %}
+      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+   {% else %}
+    <li class="disabled"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+  {% endif %}
+</ul>
+{% endif %}
+{% endcapture %}
+
+{{ pagination }}
+
+{% for post in paginator.posts %}
+<div class="panel panel-default" style="margin-left: 10px; margin-right: 10px;">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ post.title }}</h3>
+  </div>
+  <div class="panel-body">
+  {{ post.excerpt | markdownify }}
+  </div>
+  
+  <div class="panel-footer">Posted by: {{ post.autor }}, {{ post.date | date_to_string }}</div>
+</div>
+{% endfor %}
+
+{{ pagination }}

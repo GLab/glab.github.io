@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Presentation: ToMaTo - Programmable Devices</title>
+	
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="deckjs/css/deck.core.css">
+	<link rel="stylesheet" href="deckjs/css/deck.goto.css">
+	<link rel="stylesheet" href="deckjs/css/deck.menu.css">
+	<link rel="stylesheet" href="deckjs/css/deck.navigation.css">
+	<link rel="stylesheet" href="deckjs/css/deck.status.css">
+	<link rel="stylesheet" href="deckjs/css/deck.hash.css">
+	<link rel="stylesheet" href="deckjs/css/deck.scale.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="deckjs/css/style/glab.css">
+	<link rel="stylesheet" id="transition-theme-link" href="deckjs/css/transition/fade.css" media="screen">
+	
+	<!-- Codemirror -->
+	<link rel="stylesheet" href="deckjs/codemirror/deck.codemirror.css">
+	<link rel="stylesheet" href="deckjs/codemirror/themes/default.css">
+
+	<script src="deckjs/js/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<div class="slide" id="title-slide">
+	<h1>ToMaTo - Programmable Devices</h1>
+</div>
+
+<div class="slide two-columns" id="topology-elements">
+	<h2>ToMaTo, Topology Management Tool</h2>
+	ToMaTo is topology-oriented, i.e. users build topologies for their experiments.
+	<img src="images/top.png" class="span" height="33%"/>
+	<div class="slide column left">
+		<h3>Devices</h3>
+		<ul>
+			<li>produce and consume data</li>
+			<li>can run software</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Connectors</h3>
+		<ul>
+			<li>forward and manipulate data</li>
+			<li>connect devices</li>
+		</ul>
+	</div>
+	<div class="slide column left">
+		<h3>Three kinds of devices</h3>
+		<ul>
+			<li>KVM devices</li>
+			<li>OpenVZ devices</li>
+			<li>Programmable devices</li>
+		</ul>
+	</div>
+	<div class="slide column right">
+		<h3>Two kinds of connectors</h3>
+		<ul>
+			<li>VPN networks</li>
+			<li>External networks</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide two-columns" id="topology-elements">
+	<h2>Programmable devices</h2>
+	<p>Programmable devices run scripts written in Repy, a sandboxed Python dialect. Using these devices, networking data can be read and written as raw Ethernet packages.</p>
+	<h3>Difference between Repy and Python</h3>
+	<ul>
+		<li>No global variables. Instead Repy has a dictionary <tt>mycontext</tt> that can be used to store global variables.</li>
+		<li>No user input via <tt>input</tt> or <tt>raw_input</tt></li>
+		<li>Some Python builtins are not available. The most important are:</li>
+		<ul>
+			<li><tt>import</tt> and <tt>reload</tt>, Repy does not allow library loading</li>
+			<li><tt>print</tt>, use <tt>echo("message")</tt> instead</li>
+			<li><tt>input</tt>, <tt>raw_input</tt>, <tt>eval</tt> and <tt>execfile</tt></li>
+			<li><tt>lambda</tt> and <tt>yield</tt></li>
+			<li><tt>hasattr</tt>, <tt>getattr</tt> and <tt>setattr</tt></li>
+		</ul>
+		<li>Parameters to the script are passed as <tt>callargs</tt></li>
+	</ul>
+</div>
+
+<div class="slide" id="code">
+	<h2>Script library: tomatolib</h2>
+	<p>The library is part of the ToMaTo source code and located at <a href="https://github.com/dswd/ToMaTo/tree/master/repy/tomatolib">Github</a>. It contains the following:</p>
+	<ul>
+		<li class="slide">Implementations of common Internet protocols (some are stubs)</li>
+		<li class="slide">Example Repy scripts</li>
+		<li class="slide">Utility methods for Repy scripts</li>
+		<li class="slide">Makefile to include libraries in scripts and build combined script</li>
+	</ul>
+	<div class="slide">
+		<p>Library files can be found in the <tt>lib</tt> directrory and can be included like in the C programming language</p>
+		<div><textarea class="code" mode="python">
+#include <some_file/in_lib.repy>
+
+def your_code(comes, here):
+  ...</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<p>Build your final output script using these steps:</p>
+		<ol>
+			<li>Put your code in the <tt>src</tt> directory</li>
+			<li>Call <tt>make</tt> in the base directory</li>
+			<li>Find your output script in the <tt>build</tt> directory</li>
+		</ol>
+	</div>
+</div>
+
+<div class="slide" id="code">
+	<h2>Packet reading</h2>
+	<div class="slide">
+		<h3>Reading from one device</h3>
+		<div><textarea class="code" mode="python">
+packet = tuntap_read("eth0", timeout=None)</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<h3>Timeout values</h3>
+		<ul>
+			<li><tt>timeout=T</tt> waits at most for T seconds for a packet, otherwise returns None</li>
+			<li><tt>timeout=0.0</tt> returns packet (or None) immediately, no timeout</li>
+			<li><tt>timeout=None</tt> returns when a packet has been received, infinite timeout</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>Reading from all devices at once</h3>
+		<div><textarea class="code" mode="python">
+(dev, packet) = tuntap_read_any(timeout=None)</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<h3>Default reading loop</h3>
+		<div><textarea class="code" mode="python">
+while True:
+  try:
+    (dev, packet) = tuntap_read_any(timeout=None)
+    if packet:
+      handle(dev, packet)
+    except Exception, e:
+      print_exc(e)</textarea></div><p/>
+	</div>
+</div>
+
+<div class="slide" id="code">
+	<h2>Packet sending</h2>
+	<div class="slide">
+		<h3>Sending on one device</h3>
+		<div><textarea class="code" mode="python">
+tuntap_send("eth0", packet)</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<h3>Sending on all devices</h3>
+		<div><textarea class="code" mode="python">
+for dev in tuntap_list():
+  send(dev, packet)</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<h3>Sending and receiving (simple switch example)</h3>
+		<div><textarea class="code" mode="python">
+#include <layer2/ethernet_proto.repy>
+
+mac_table = {}
+
+while True:
+  (dev, packet) = tuntap_read_any(timeout=None)
+  ether = ethernet_decode(packet)
+  mac_table[ether.src] = dev
+  dst = mac_table.get(ether.dst)
+  if dst:
+    tuntap_send(dst, packet)
+  else:
+    for dst in tuntap_list():
+      if dst != dev:
+        tuntap_send(dst, packet)</textarea></div><p/>
+	</div>
+</div>
+
+<div class="slide" id="code">
+	<h2>Working with protocols - dissecting headers</h2>
+	<div class="slide">
+		<h3>Packets are strings</h3>
+		<ul>
+			<li><tt>packet[index]</tt> is one character (one byte)</li>
+			<li><tt>len(packet)</tt> is the size of a packet</li>
+			<li><tt>packet[start:end]</tt> is a byte range from start to end-1</li>
+			<li><tt>ord(char)</tt> converts a character to a number</li>
+			<li><tt>chr(num)</tt> converts a number to a character</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>Example: IP</h3>
+		<div><textarea class="code" mode="python">
+# This is only the IP header
+
+# Source and destination address are 4 bytes each starting at bytes 12 and 16
+src = packet[12:16]
+dst = packet[16:20]
+
+# IP header length is last 4 bits of the first byte
+ihl = ord(packet[0]) & 0x0f
+
+# IP header length counts length in 4-byte blocks
+# First 5 blocks are normal header, rest are option headers
+options = []
+for i in range(5, ihl):
+  options.append(packet[4*i:4*i+4])
+
+# After the header comes the payload
+payload = packet[ihl*4:]</textarea></div><p/>
+	</div>
+</div>
+
+<div class="slide" id="code">
+	<h2>Packing and unpacking binary data using struct</h2>
+	<div class="slide">
+		<h3>Decoding binary data</h3>
+		<div><textarea class="code" mode="python">
+(byte1, byte2, int1, int2) = struct.unpack("!BBHH", packet[0:6])</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<h3>Encoding binary data</h3>
+		<div><textarea class="code" mode="python">
+packet = struct.pack("!BBHH", byte1, byte2, int1, int2)</textarea></div><p/>
+	</div>
+	<div class="slide">
+		<h3>Struct codes</h3>
+		<ul>
+			<li><strong>!</strong> means network byte order, must be first character</li>
+			<li>Each character stands for one field</li>
+			<ul>
+				<li><strong>B</strong> is a number that takes 1 byte (<strong>B</strong>yte)</li>
+				<li><strong>H</strong> is a number that takes 2 bytes (<strong>H</strong>alf-integer)</li>
+				<li><strong>I</strong> is a number that takes 4 bytes (<strong>I</strong>nteger)</li>
+				<li><strong>Q</strong> is a number that takes 8 bytes</li>
+			</ul>
+			<li>Uppercase is unsigned, lowercase is signed</li>
+		</ul>
+		See the <a href="http://docs.python.org/library/struct.html">python struct documentation</a> for more info.
+	</div>
+</div>
+
+<div class="slide" id="code">
+	<h2>Tips &amp; Tricks</h2>
+	<blockquote class="slide"><strong>Code sharing:</strong> Share your code with others on Github to improve the library and to get feedback.</blockquote>
+	<blockquote class="slide"><strong>Performance:</strong> Code that uses struct to convert binary data to numbers is a faster but the fastest code avoids convertions.</blockquote>
+	<blockquote class="slide"><strong>Exception handling:</strong> Wrap the per-packet code in a try-except block, otherwise the script will abort on an error.</blockquote>
+	<blockquote class="slide"><strong>80-20 rule:</strong> 80% of the functionality of a protocol is implemented in 20% of its code, and vice versa. Most protocols have optional features that are not needed in most cases.</blockquote>
+	<blockquote class="slide"><strong>Arguments:</strong> Scripts can take arguments, no need to write different scripts just to have different addresses.</blockquote>
+	</ul>
+</div>
+
+<div class="slide" id="how-to-get">
+	<h2>Obtaining and contributing</h2>
+	<div class="slide">
+		<h3>How to get ToMaTo</h3>
+		<p>ToMaTo is Open-Source! It can be simply downloaded from the <a href="http://github.com/dswd/ToMaTo">Github page</a>. There is also a <a href="http://github.com/dswd/ToMaTo/wiki/Tomatoinstallation">step-by-step tutorial</a> on how to setup ToMaTo in a testbed. ToMaTo includes some nice features that make it pretty easy to install it in an experimental facility:</p>
+		<ul>
+			<li>All components packaged for debian (updates come automatically)</li>
+			<li>Multiple authentication plugins: LDAP, htaccess, SQL-Database, Planet-Lab, ...</li>
+			<li>Automatic checks and problem reports for the ToMaTo hosts</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<h3>How to contribute to ToMaTo</h3>
+		<p>As an Open-Source project ToMaTo is open for hints and contributions.</p>
+		<ul>
+			<li>Github offers an easy way to fork the project and offer contributions as pull requests</li>
+			<li>The wiki is publically editable so everyone can help by adding to the documentation</li>
+			<li>The issue tracking system can be used for bug reports and feature requests</li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- for navigation extension -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- for status extension -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- for goto extension -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="number" name="slidenum" id="goto-slide">
+	<input type="submit" value="Go">
+</form>
+
+<!-- for hash extension -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<script src="deckjs/js/jquery-1.6.3.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="deckjs/js/deck.core.js"></script>
+<script src="deckjs/js/deck.menu.js"></script>
+<script src="deckjs/js/deck.goto.js"></script>
+<script src="deckjs/js/deck.status.js"></script>
+<script src="deckjs/js/deck.navigation.js"></script>
+<script src="deckjs/js/deck.scale.js"></script>
+
+<!-- Codemirror -->
+<script src="deckjs/codemirror/codemirror.js"></script>
+<script src="deckjs/codemirror/mode/python/python.js"></script>
+<script src="deckjs/codemirror/mode/clike/clike.js"></script>
+<script src="deckjs/codemirror/deck.codemirror.js"></script>
+
+<script><!-- 
+$(function() {$.deck('.slide');}); 
+//--></script>
+
+</body>
+</html>

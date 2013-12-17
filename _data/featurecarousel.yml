@@ -1,0 +1,36 @@
+- title: Intuitive editor
+  text: Create your virtual network topology in an intuitive web-based editor. No need to write config files or code. 
+  image: /images/editor1.png
+- title: Up and running in seconds
+  text: Even very complex topologies can be configured and started in a few seconds.
+  image: /images/fast.png
+- title: Sites worldwide
+  text: Create topologies that go around the globe, select freely from our various sites. 
+  image: /images/worldwide.jpeg
+- title: Packet capturing
+  text: Have a look at what goes over the wire. Just activate packet capturing on a link and analyze the traffic in Wireshark.
+  image: /images/packet_capturing.png
+- title: Link emulation
+  text: Configure different properties like latency, packet loss or bandwidth on each link.
+  image: /images/link_emulation.png
+- title: Graphical console
+  text: Control your virtual machines directly from a web-based console viewer. Watch your VM boot or control graphical user interfaces.
+  image: /images/graphical_console.png
+#- title: Agile experiments
+#  text: Change and re-configure almost everything in your topology during runtime.
+#  image: -
+#- title: Virtual networks
+#  text: Use virtual switches or external networks to connect your topology.
+#  image: -
+- title: Different virtualization technologies
+  text: Select from full virtualization (KVM) and container virtualization (OpenVZ) for each topology component to save resources.
+  image: /images/virtualization_techs.png
+- title: Pre-configured templates
+  text: Select from a wide range of pre-configures VM images spanning from Debian, Ubuntu and other Linux systems to Windows XP.
+  image: /images/templates.png
+- title: Integrated monitoring
+  text: Observe the resource usage of a whole topology or individual components.
+  image: /images/monitoring.png
+#- title: Scriptable
+#  text: Create fully automated experiments or control multiple VMs at once using the extensive XML-RPC interface.
+#  image: -
