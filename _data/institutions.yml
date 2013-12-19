@@ -18,3 +18,7 @@
   location: Canada
   url: http://www.uvic.ca
   logo: ../images/sites/uvic.png
+- name: University of Würzburg
+  location: Germany
+  url: http://www.uni-wuerzburg.de
+  logo: ../images/sites/uwue.jpg
