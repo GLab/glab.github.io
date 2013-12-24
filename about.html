@@ -95,7 +95,7 @@ ToMaTo has been developed in the context of the <a href="http://www.german-lab.d
 <ul>
 {% for publication in site.data.publications %}
   <li><strong>{% if publication.url %}<a href="{{ publication.url }}">{{ publication.name }}</a>{% else %}{{ publication.name }}{% endif %}</strong><br/>
-      <em>{{ publication.autor }}</em><br/>
+      <em>{{ publication.author }}</em><br/>
       {{ publication.reference }}</li>
 {% endfor %}
 </ul>
