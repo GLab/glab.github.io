@@ -4042,7 +4042,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav {
   padding-left: 0;
-  margin-bottom: 40pt;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -4188,7 +4188,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a:hover,
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #dddddd;
-  border-bottom: 1px solid #9c3036;
 }
 
 @media (min-width: 768px) {

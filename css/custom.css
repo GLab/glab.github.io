@@ -1,3 +1,26 @@
+.nav {
+  margin-bottom: 40pt;
+}
+
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border-bottom: 1px solid #9c3036;
+}
+
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  border-bottom: 3px solid #9c3036;
+}
+
+.nav-justified > li:first-child > a {
+  border-radius: 5px 5px 3px 3px;
+}
+
+.nav-justified > li:last-child.active > a {
+  border-bottom: 3px solid #9c3036;
+}
+
 .carousel-inner .item {
   padding-bottom: 150px;
   text-align: center;
