@@ -3,10 +3,6 @@ layout: default
 title: News
 category: news
 ---
-
-<script src="../js/jquery.min.js"></script>
-<script src="../js/bootstrap.js"></script>
-
 {% capture pagination %}
 {% if paginator.total_pages > 1 %}
 <ul class="pagination">
@@ -35,10 +31,11 @@ category: news
 {% endif %}
 {% endcapture %}
 
+<div class="row"><div class="col-md-8 col-md-offset-2">
 {{ pagination }}
 
 {% for post in paginator.posts %}
-<div class="panel panel-default" style="margin-left: 10px; margin-right: 10px;">
+<div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">{{ post.title }}</h3>
   </div>
@@ -51,3 +48,4 @@ category: news
 {% endfor %}
 
 {{ pagination }}
+</div></div>

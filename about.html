@@ -43,7 +43,7 @@ ToMaTo has been developed in the context of the <a href="http://www.german-lab.d
 {% for institution in site.data.institutions %}
     <div class="col-xs-12 col-sm-6 col-lg-4">
       <div class="skip-xs"></div>
-      <a href="{{ institution.url }}"><img src="{{ institution.logo }}"/></a><br/>
+      <a href="{{ institution.url }}"><img src="{{ institution.logo }}" class="img-responsive site"/></a><br/>
       <b>{{ institution.name }}</b>, {{ institution.location }}
       <div class="skip-xs"></div>
     </div>
@@ -63,7 +63,7 @@ ToMaTo has been developed in the context of the <a href="http://www.german-lab.d
 {% for feature in site.data.featurecarousel %}
   <div class="col-xs-12 col-sm-6 col-lg-4">
     <h3>{{ feature.title }}</h3>
-    <img src="{{ feature.image }}" style="height:6em;float:left;margin-right:2em;">
+    <img src="{{ feature.image }}" class="img-responsive" style="height:6em;float:left;margin-right:2em;">
     <p>{{ feature.text }}</p>
   </div>
   <div class="clearfix visible-xs"></div>

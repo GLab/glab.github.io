@@ -59,8 +59,9 @@
   background-image: none !important;
 }
 
-#sites img {
+img.site {
   height: 4em;
+  margin-right: 1em;
 }
 
 .skip-xs {
