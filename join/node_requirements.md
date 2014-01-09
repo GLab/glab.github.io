@@ -32,3 +32,12 @@ Each ToMaTo node must meet some minimum requirements to be usable for the platfo
 
 * Planned availability of **at least 95% uptime**
 * Technical support with reaction time within 3 work days
+
+## Node Software
+
+The nodes need to run a Debian based operating system with some additional packages installed for ToMaTo.
+
+The [Proxmox VE virtualization](http://www.proxmox.com/proxmox-ve) system is fully supported by ToMaTo and currently is the recommended host operating system.
+Using Proxmox as a base system has the advantage that additional virtual machines can be created and used besides ToMato.
+
+The documentation explains the [installation procedure](https://tomato.readthedocs.org/en/latest/hostmanager/tomato/installation/). The administrators can assist with the installation if help is needed.
