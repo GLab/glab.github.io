@@ -9,13 +9,13 @@
   image: /images/worldwide.jpeg
 - title: Packet capturing
   text: Have a look at what goes over the wire. Just activate packet capturing on a link and analyze the traffic in Wireshark.
-  image: /images/packet_capturing.png
+  image: /images/packet_capturing.jpeg
 - title: Link emulation
   text: Configure different properties like latency, packet loss or bandwidth on each link.
   image: /images/link_emulation.png
 - title: Graphical console
   text: Control your virtual machines directly from a web-based console viewer. Watch your VM boot or control graphical user interfaces.
-  image: /images/graphical_console.png
+  image: /images/graphical_console.jpeg
 #- title: Agile experiments
 #  text: Change and re-configure almost everything in your topology during runtime.
 #  image: -
