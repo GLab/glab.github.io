@@ -19,9 +19,9 @@
 #- title: Agile experiments
 #  text: Change and re-configure almost everything in your topology during runtime.
 #  image: -
-#- title: Virtual networks
-#  text: Use virtual switches or external networks to connect your topology.
-#  image: -
+- title: Virtual networks
+  text: Use virtual switches or external networks to connect your topology.
+  image: /images/virtual_networks.png
 - title: Different virtualization technologies
   text: Select from full virtualization (KVM) and container virtualization (OpenVZ) for each topology component to save resources.
   image: /images/virtualization_techs.png
