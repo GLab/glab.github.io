@@ -26,7 +26,7 @@ Please also join the [users mailing list](http://lists.uni-kl.de/tomato-lab/info
 
 ## Institutions
 
-The testbed is run by the ToMaTo consortium on a cooperative model. This means that academic institutions can join the testbed **for free** if they contribute resources to the testbed. Please see the page [node requirements](node_requirements) for information on requirements on contributed resources.
+The testbed is run by the ToMaTo consortium on a cooperative model. This means that academic institutions can join the testbed **for free** if they contribute resources to the testbed. Please see the page [node requirements](node_requirements) for information on requirements on contributed resources. The page [organization roles](roles) describes the different roles that exist and the responsibilities and tasks of the assigned persons.
 
 The membership agreement is currently being designed, please stay tuned and watch the news.
 
