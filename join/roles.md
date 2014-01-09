@@ -8,6 +8,8 @@ category: join
 
 Each institution will be tracked in ToMaTo as an organization. Organizations are responsible for their own users and nodes. Therefore some roles have to be assigned:
 
+<div class="row">
+<div class="col-md-4 col-xs-12" markdown="1">
 
 ### Principal Investigator
 
@@ -19,6 +21,7 @@ This person is responsible for all users and nodes and able to sign contracts fo
 * Assign persons to all other roles
 * Member of the users mailing list
 
+</div><div class="col-md-4 col-xs-12" markdown="1">
 
 ### Administrative Contact
 
@@ -33,6 +36,7 @@ This role can be shared by multiple persons.
 * Oversee all experiments of the organization's users
 * Member of the users mailing list
 
+</div><div class="col-md-4 col-xs-12" markdown="1">
 
 ### Technical Contact
 
@@ -46,3 +50,5 @@ This role can be shared by multiple persons.
 * Permission to manage nodes of the organization
 * Informed about node problems
 * Member of the users mailing list
+
+</div></div>
