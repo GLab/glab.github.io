@@ -1,11 +1,11 @@
 ---
-layout: news
+layout: post
 title:  "New Site: University of Victoria"
 categories: news sites
 autor: Dennis Schwerdel
 ---
 
-<img src="../images/sites/uvic.png" class="img-responsive site"/>
+<img src="/images/sites/uvic.png" class="img-responsive site"/>
 
 Today we welcome the University of Victoria in Canada as a new site in
 ToMaTo. This site is up and running with 5 strong nodes.

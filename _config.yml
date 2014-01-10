@@ -1,4 +1,6 @@
 name: ToMaTo
+description: Topology Management Tool Testbed
+url: http://www.tomato-lab.org
 markdown: kramdown
 pygments: true
 baseurl: 

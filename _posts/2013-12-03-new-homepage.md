@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: post
 title:  "New Homepage"
 categories: news general
 autor: Dennis Schwerdel
