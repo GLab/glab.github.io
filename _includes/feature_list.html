@@ -1,0 +1,12 @@
+<div class="row">
+{% for feature in site.data.featurecarousel %}
+  <div class="col-xs-12 col-sm-6 col-lg-4">
+    <h3>{{ feature.title }}</h3>
+    <img src="{{ feature.image }}" class="img-responsive" style="height:6em;float:left;margin-right:2em;">
+    <p>{{ feature.text }}</p>
+  </div>
+  <div class="clearfix visible-xs"></div>
+  {% cycle '', '<div class="clearfix visible-sm visible-md"></div>' %}
+  {% cycle '', '', '<div class="clearfix visible-lg"></div>' %}
+{% endfor %}
+</div>

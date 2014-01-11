@@ -1,0 +1,6 @@
+<ul>
+{% for presentation in site.data.presentations %}
+  <li><strong><a href="{{ presentation.url }}" target="_blank">{{ presentation.name }}</a></strong><br/>
+      <em>{{ presentation.autor }}</em></li>
+{% endfor %}
+</ul>

@@ -1,24 +1,24 @@
 - name: University of Kaiserslautern
   location: Germany
   url: http://www.uni-kl.de
-  logo: ../images/sites/ukl.png
+  logo: /images/sites/ukl.png
 - name: German-Lab Facility
   location: Germany
   url: http://www.german-lab.de
-  logo: ../images/glablogo.jpg
+  logo: /images/glablogo.jpg
 - name: University of Kansas
   location: USA
   url: http://www.ku.edu
-  logo: ../images/sites/ku.png
+  logo: /images/sites/ku.png
 - name: Northwestern University
   location: USA
   url: http://www.northwestern.edu
-  logo: ../images/sites/northwestern.png
+  logo: /images/sites/northwestern.png
 - name: University of Victoria
   location: Canada
   url: http://www.uvic.ca
-  logo: ../images/sites/uvic.png
+  logo: /images/sites/uvic.png
 - name: University of Würzburg
   location: Germany
   url: http://www.uni-wuerzburg.de
-  logo: ../images/sites/uwue.png
+  logo: /images/sites/uwue.png
