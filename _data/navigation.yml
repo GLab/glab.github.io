@@ -16,6 +16,9 @@
 #- title: Help
 #  url: /help
 #  id: help
+- title: Testbed
+  url: http://master.tomato-lab.org
+  external: true
 - title: Contact
   url: /contact
   id: contact

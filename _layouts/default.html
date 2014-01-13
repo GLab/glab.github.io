@@ -39,7 +39,7 @@
         <img src="{{ site.baseurl }}/images/tomato_logo.png" alt="ToMaTo" class="img-rounded">
         <ul class="nav nav-justified">
         {% for nav in site.data.navigation %}
-          <li {% if page.category == nav.id %}class="active"{% endif %}><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+          <li {% if page.category == nav.id %}class="active"{% endif %}><a href="{{ nav.url }}" {% if nav.external %}target="_blank"{% endif %}>{{ nav.title }}</a></li>
         {% endfor %}
         </ul>
       </div>
