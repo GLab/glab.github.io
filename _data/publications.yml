@@ -1,3 +1,7 @@
+- name: "Future Internet research and experimentation: The G-Lab approach"
+  author: Dennis Schwerdel, Bernd Reuther, Thomas Zinner, Paul Müller and Phouc Tran-Gia
+  reference: TBP, Computer Networks, Available online 8 January 2014, ISSN 1389-1286
+  url: http://dx.doi.org/10.1016/j.bjp.2013.12.023
 - name: ToMaTo - a network experimentation tool
   author: Dennis Schwerdel, David Hock, Daniel Günther, Bernd Reuther, Paul Müller and Phuoc Tran-Gia
   reference: 7th International ICST Conference on Testbeds and Research Infrastructures for the Development of Networks and Communities (TridentCom 2011), Shanghai, China, April 2011.
