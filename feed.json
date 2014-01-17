@@ -1,0 +1,19 @@
+---
+layout: none
+---
+{
+  "title": {{ site.name | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "link": {{ site.url | jsonify }},
+  "items": [
+  {% for post in site.posts limit:10 %}
+    {% if forloop.index0 != 0 %},{% endif %}
+    {
+      "title": {{ post.title | jsonify }},
+      "description": {{ post.content | jsonify }},
+      "pubDate": {{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" | jsonify }},
+      "link": {{ site.url | append: post.url | jsonify }}
+    }
+  {% endfor %}
+  ]
+}
