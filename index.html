@@ -19,7 +19,12 @@ category: home
       <div class="carousel-inner">
 {% for feature in site.data.featurecarousel %}
         <div class="item {% if forloop.first %}active{% endif %}">
-          <img src="{{ feature.image }}" class="img-responsive">
+          <div class="visible-lg visible-md visible-sm" style="height:350px">
+            <img src="{{ feature.image }}" class="img-responsive">
+          </div>
+          <div class="visible-xs" style="height:200px">
+            <img src="{{ feature.image }}" class="img-responsive">
+          </div>
           <div class="carousel-caption">
             <h3>{{ feature.title }}</h3>
             <p>{{ feature.text }}</p>

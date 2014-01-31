@@ -29,8 +29,8 @@
 }
 
 .carousel-inner .item img {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  max-height: 100%;
 }
 
 .carousel-control {
