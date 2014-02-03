@@ -13,9 +13,9 @@
 - title: Contribute
   url: /contribute
   id: contribute
-#- title: Help
-#  url: /help
-#  id: help
+- title: Help
+  url: http://github.com/GLab/ToMaTo/wiki
+  external: true
 - title: Testbed
   url: http://master.tomato-lab.org
   external: true
