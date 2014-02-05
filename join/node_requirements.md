@@ -11,6 +11,7 @@ Each ToMaTo node must meet some minimum requirements to be usable for the platfo
 ## Node Hardware
 
 * Multiple cores with **at least 2 GHz**
+* x86 architecture with 64 bit support
 * Support for **hardware virtualization** in the CPU
   - This means that the node must be physical and not a VM
   - You can check this requirement by executing:
