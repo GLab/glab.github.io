@@ -1,16 +1,20 @@
 - name: "Future Internet research and experimentation: The G-Lab approach"
-  author: Dennis Schwerdel, Bernd Reuther, Thomas Zinner, Paul Müller and Phouc Tran-Gia
+  author: Dennis Schwerdel, Bernd Reuther, Thomas Zinner, Paul Müller and Phuoc Tran-Gia
   reference: TBP, Computer Networks, Available online 8 January 2014, ISSN 1389-1286
-  url: http://dx.doi.org/10.1016/j.bjp.2013.12.023
+  url: /about/publications/2014_Future_Internet_research_an_experimentation_The_G-Lab_approach_ComNet.pdf
+- name: ToMaTo a Virtual Research Environment for Large Scale Distributed Systems Research
+  author: Paul Müller, Dennis Schwerdel and Justin Cappos
+  reference: TBP, PIK - Praxis der Informationsverarbeitung und Kommunikation, Available online 25 January 2014
+  url: /about/publications/2013_ToMaTo_A_Virtual_Research_Environment_PIK.pdf
 - name: ToMaTo - a network experimentation tool
   author: Dennis Schwerdel, David Hock, Daniel Günther, Bernd Reuther, Paul Müller and Phuoc Tran-Gia
   reference: 7th International ICST Conference on Testbeds and Research Infrastructures for the Development of Networks and Communities (TridentCom 2011), Shanghai, China, April 2011.
-  url: http://dspace.icsy.de:12000/dspace/bitstream/123456789/309/1/2011_ToMaTo%20-%20a%20network%20experimentation%20tool_TridentCom.pdf
+  url: /about/publications/2011_ToMaTo_a_network_experimentation_tool_TridentCom.pdf
 - name: Testing Mobile Apps in the ToMaTo Testbed
   author: Dennis Schwerdel, Joachim Götze, Bernd Reuther and Paul Müller
   reference: '12th Würzburg Workshop on IP: ITG Workshop "Visions of Future Generation Networks" (EuroView2012), Würzburg, Germany, July 2012.'
-  url: http://www.euroview2012.org/fileadmin/content/euroview2012/abstracts/07_04_abstract_schwerdel.pdf
+  url: /about/publications/2012_Testing_Mobile_Apps_in_the_ToMaTo_Testbed_EuroView.pdf
 - name: Malware Analysis in the ToMaTo Testbed
   author: Dennis Schwerdel, Bernd Reuther and Paul Müller
   reference: '11th Würzburg Workshop on IP: ITG Workshop "Visions of Future Generation Networks" (EuroView2011), Würzburg, Germany, August 2011.'
-  url: http://www.euroview2011.com/fileadmin/content/euroview2011/abstracts/abstract_schwerdel_a.pdf
+  url: /about/publications/2011_Malware_Analysis_in_the_ToMaTo_Testbed_EuroView.pdf
