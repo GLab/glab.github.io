@@ -22,3 +22,7 @@
   location: Germany
   url: http://www.uni-wuerzburg.de
   logo: /images/sites/uwue.png
+- name: University of Munich
+  location: Germany
+  url: http://www.tum.de
+  logo: /images/sites/tum.png
