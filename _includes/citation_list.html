@@ -1,0 +1,6 @@
+{% for citation in site.data.citations %}
+<blockquote>
+  <p><i>"{{citation.text}}"</i></p>
+  <footer><small>{{citation.reference}}</small></footer>
+</blockquote>
+{% endfor %}
