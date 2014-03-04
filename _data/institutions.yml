@@ -26,3 +26,23 @@
   location: Germany
   url: http://www.tum.de
   logo: /images/sites/tum.png
+- name: University of Darmstadt
+  location: Germany
+  url: http://www.tu-darmstadt.de
+  logo: /images/sites/tud.png
+- name: University of Aachen
+  location: Germany
+  url: http://www.rwth-aachen.de
+  logo: /images/sites/rwth.png
+- name: Rutgers University
+  location: USA
+  url: http://www.rutgers.edu
+  logo: /images/sites/rutgers.png
+- name: Clemson University
+  location: USA
+  url: http://www.clemson.edu
+  logo: /images/sites/clemson.png
+- name: University of Erlangen-Nürnberg
+  location: Germany
+  url: http://www.uni-erlangen.de
+  logo: /images/sites/fau.png
