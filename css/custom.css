@@ -60,7 +60,7 @@
 }
 
 img.site {
-  height: 4em;
+  max-height: 4em;
   margin-right: 1em;
 }
 
