@@ -30,6 +30,10 @@
   location: Norway
   url: http://www.simula.no
   logo: /images/sites/simula.gif
+- name: NorNet Testbed
+  location: Norway
+  url: http://www.nntb.no
+  logo: /images/sites/nornet.png
 - name: University of Darmstadt
   location: Germany
   url: http://www.tu-darmstadt.de
