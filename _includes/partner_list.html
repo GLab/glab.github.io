@@ -1,10 +1,10 @@
   <div class="row">
 {% for institution in site.data.institutions %}
     <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="skip-xs"></div>
-      <a href="{{ institution.url }}" target="_blank"><img src="{{ institution.logo }}" class="img-responsive site"/></a><br/>
-      <b>{{ institution.name }}</b>, {{ institution.location }}
-      <div class="skip-xs"></div>
+      <div class="institution">
+        <a href="{{ institution.url }}" target="_blank"><img src="{{ institution.logo }}" class="img-responsive site"/></a><br/>
+        <b>{{ institution.name }}</b>, {{ institution.location }}
+      </div>
     </div>
     {% cycle '', '<div class="clearfix visible-sm"></div>' %}
     {% cycle '', '', '<div class="clearfix visible-md visible-lg"></div>' %}
