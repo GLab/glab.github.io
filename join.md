@@ -16,7 +16,7 @@ Users must belong to an institution that is already part of the ToMaTo consortiu
 
 Testbed resources can only be used under the terms and conditions of the [acceptable use policy](../aup).
 
-Please also join the [users mailing list](http://lists.uni-kl.de/tomato-lab/info/users). This list will be used for all announcenments and can also be used to get help from uther users.
+Please also join the [users mailing list](http://lists.uni-kl.de/tomato-lab/info/users). This list will be used for all announcenments and can also be used to get help from other users.
 
 <p class="text-center"><a href="https://master.tomato-lab.org/account/register" class="btn btn-primary btn-lg" role="button">Join as User</a></p>
 
