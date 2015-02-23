@@ -1,0 +1,141 @@
+1
+00:00:04,984 --> 00:00:08,710
+Hello and welcome to the first ToMaTo screencast tutorial. 
+
+2
+00:00:08,710 --> 00:00:12,981
+In this tutorial, you will learn how to create and operate your first topology.
+
+3
+00:00:12,981 --> 00:00:17,341
+An instance of the ToMaTo testbed can be found at http://master.tomato-lab.org
+
+4
+00:00:17,341 --> 00:00:21,521
+I will now log in to my activated account.
+
+5
+00:00:29,488 --> 00:00:32,388
+After logging in, we see a list of all topologies of this user.
+
+6
+00:00:32,962 --> 00:00:34,542
+In this case, this list is empty.
+
+7
+00:00:35,042 --> 00:00:37,504
+We now have to create a new topology.
+
+8
+00:00:46,022 --> 00:00:49,663
+We can now populate the empty topology by creating devices.
+
+9
+00:00:49,663 --> 00:00:55,182
+For devices, we can select between KVM and OpenVZ devices.
+
+10
+00:00:55,182 --> 00:01:01,963
+As a general rule, you should always select OpenVZ devices if you don't need the benefits that come with KVM.
+
+11
+00:01:12,599 --> 00:01:16,055
+These newly created devices don't have any network connections yet.
+
+12
+00:01:16,055 --> 00:01:19,672
+In this example, we will simply connect them to each other.
+
+13
+00:01:24,961 --> 00:01:27,188
+Now, we can prepare the topology.
+
+14
+00:01:27,188 --> 00:01:32,249
+This means that the testbed will create the virtual machines
+and their initial disk images.
+
+15
+00:01:52,436 --> 00:01:56,679
+The red 'stop' signs on the devices indicate that preparing has been finished.
+
+16
+00:01:56,679 --> 00:01:59,720
+We can now proceed to booting the devices.
+
+17
+00:02:09,271 --> 00:02:14,972
+When the devices have been started successfully, a green 'started' icon will appear on the devices.
+
+18
+00:02:16,093 --> 00:02:20,123
+In this tutorial, we will run a ping test to demonstrate the network functionality.
+
+19
+00:02:20,123 --> 00:02:24,518
+To do this, we first need the IP address of the left device.
+
+20
+00:02:24,518 --> 00:02:29,281
+Each network interface of a device appears as a grey dot.
+
+21
+00:02:29,281 --> 00:02:32,967
+You can get the IP address of a network interface from its configuration window.
+
+22
+00:02:39,732 --> 00:02:44,712
+We can get VNC access to a device's console via its right-click menu.
+
+23
+00:02:54,922 --> 00:02:59,176
+Using 'ifconfig', you can show the device's network configuration.
+
+24
+00:02:59,176 --> 00:03:03,696
+In this case, there should be one ethernet interface, and one loopback interface.
+
+25
+00:03:09,204 --> 00:03:15,164
+Using the 'ping' command, we can run a ping test to the IP address we have discovered before.
+
+26
+00:03:28,711 --> 00:03:32,322
+After completing our tests, we should now clean up.
+
+27
+00:03:32,322 --> 00:03:34,243
+First, we have to stop our devices.
+
+28
+00:03:34,243 --> 00:03:40,603
+This means that the virtual machines will be stopped, but they are not destroyed, and the disk images will be kept.
+
+29
+00:03:48,844 --> 00:03:52,326
+Since we don't need our devices anymore, we can destroy them.
+
+30
+00:03:52,326 --> 00:03:57,406
+This means that the virtual machines and the disk images are deleted from the server.
+
+31
+00:04:03,284 --> 00:04:07,425
+We won't be using this topology anymore, so we can delete it.
+
+32
+00:04:15,769 --> 00:04:18,745
+We have now completed the first screencast tutorial.
+
+33
+00:04:18,745 --> 00:04:23,389
+In this tutorial, we have created a first topology consisting of two devices.
+
+34
+00:04:23,389 --> 00:04:27,060
+We have started them, and then run a ping test between them.
+
+35
+00:04:27,060 --> 00:04:34,602
+Since you haven't seen all aspects of ToMaTo by now, I highly recommend you to work through the more specialized tutorials available at tomato-lab.org
+
