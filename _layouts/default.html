@@ -34,9 +34,17 @@
   <body>
 
     <div class="container">
-
+			<div style="width:100%; display:block; height:80px;">
+				<div style="width:100%; text-align:right; width:100%; background:url({{ site.baseurl }}/images/logo_2.png); height:80px;">
+					<div style="background:white; width:285px; height:80px; float:left;">
+						<a href="/">
+										<img src="{{ site.baseurl }}/images/logo_1.png"/>
+									</a>
+								</div>
+								<div style="background:white; height:80px; width:13px; float:right;"><img src="{{ site.baseurl }}/images/logo_3.png"/></div>
+							</div>
+        </div>
       <div class="masthead">
-        <img src="{{ site.baseurl }}/images/tomato_logo.png" alt="ToMaTo" class="img-rounded">
         <ul class="nav nav-justified">
         {% for nav in site.data.navigation %}
           <li {% if page.category == nav.id %}class="active"{% endif %}><a href="{{ nav.url }}" {% if nav.external %}target="_blank"{% endif %}>{{ nav.title }}</a></li>
