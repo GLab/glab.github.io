@@ -1,0 +1,26 @@
+---
+layout: default
+category: manuals
+---
+<div class="alert alert-warning"><strong>The manuals are currently under construction.</strong> Pages may be missing, incomplete, or badly formatted.</div>
+<h3>{{site.data.manuals[page.manual].title}}</h3>
+
+<div class="container">
+
+	<div class="row">
+	
+		<div class="col-12 col-sm-3 col-md-2 manual-index">
+			<ul>
+			{% for manpage in site.data.manuals[page.manual].pages %}
+				<li class="indent-{{manpage.indent}} {% if manpage.id == page.manpage %} selected{% endif %}"><a href="/manuals/{{page.manual}}{% if manpage.url %}{{manpage.url}}{% else %}/{{manpage.id}}{% endif %}">
+					{{manpage.title}}
+				</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+		<div class="col-s12 col-sm-9 col-md-8 manual-content">
+			{{ content }}
+		</div>
+
+	</div>
+</div>

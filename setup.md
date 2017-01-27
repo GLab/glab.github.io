@@ -29,7 +29,7 @@ This mode is the recommended mode for all new sites that want to contribute to t
 ## Island mode
 
 In island mode, a full ToMaTo installation including backend, web-frontend is run. This installation is completely separate from the ToMaTo community.
-The ToMaTo backend and the web-frontend need to be installed on a dedicated host. This host can be a virtual machine, it can even be *hosted* on a node running the ToMaTo hostmanager. 
+The ToMaTo backend services and the web-frontend need to be installed on a dedicated host. This host can be a virtual machine, it can even be *hosted* on a node running the ToMaTo hostmanager.
 
 ### Installation instructions
 

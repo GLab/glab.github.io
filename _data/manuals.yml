@@ -1,0 +1,104 @@
+user:
+  title: User Manual
+  pages:
+    - title: Home
+      id: home
+      indent: 0
+      url: /
+    - title: Understanding ToMaTo
+      indent: 0
+      id: tomato
+    - title: Your User Account
+      indent: 1
+      id: account
+    - title: Sites and Hosts
+      indent: 1
+      id: site_host
+    - title: Topologies
+      indent: 0
+      id: topology
+    - title: Topology Editor
+      indent: 1
+      id: topology/editor
+    - title: Permissions
+      indent: 1
+      id: topology/permission
+    - title: Elements
+      indent: 0
+      id: element
+    - title: Actions
+      indent: 1
+      id: element/action
+    - title: Network Interfaces
+      indent: 1
+      id: element/interface
+    - title: Devices
+      indent: 1
+      id: element/device
+    - title: Container-Based Virtualization
+      indent: 2
+      id: element/device/container
+    - title: Full Virtualization
+      indent: 2
+      id: element/device/full
+    - title: Repy
+      indent: 2
+      id: element/device/repy
+    - title: Disk Images
+      indent: 2
+      id: element/device/image
+    - title: Templates
+      indent: 2
+      id: element/template
+    - title: Device Profiles
+      indent: 2
+      id: element/profile
+    - title: Executable Archives
+      indent: 2
+      id: element/device/executable_archive
+    - title: Switches
+      indent: 1
+      id: element/switch
+    - title: External Networks
+      indent: 1
+      id: element/external_network
+    - title: Connections
+      indent: 0
+      id: connection
+    - title: Link Emulation
+      indent: 1
+      id: connection/link_emulation
+    - title: Packet Capturing
+      indent: 1
+      id: connection/packet_capturing
+    - title: API
+      indent: 0
+      id: api
+    - title: Command-Line Interface
+      indent: 1
+      id: cli
+accountmanager:
+  title: Account Manager Manual
+  pages:
+    - title: Home
+      id: home
+      url: /
+hostmanager:
+  title: Host Manager Manual
+  pages:
+    - title: Home
+      id: home
+      url: /
+setup:
+  title: Testbed Manager Manual
+  pages:
+    - title: Home
+      id: home
+      url: /
+dev:
+  title: Developer's Manual
+  pages:
+    - title: Home
+      id: home
+      url: /
+
