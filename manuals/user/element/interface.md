@@ -6,8 +6,31 @@ manpage: element/interface
 category: manuals
 ---
 
-{:.alert .alert-danger}
-**This page is currently in development.** Please refer to our [wiki](https://github.com/GLab/ToMaTo/wiki) or [code documentation](https://tomato.readthedocs.io/en/latest/) instead.
+# Interface Elements
 
-{:.alert .alert-info}
-As long as you have not explicitly connected elements to the Internet, there is no network connection between any element and the Internet.
+Interface elements are special elements that are attached to other elements and represent their inidividual network interfaces. They form a child-parent relationship with their parent elements.
+
+## Creation and Deletion
+
+The editor automatically creates and deletes interface elements with their respective connection. Interface elements area also deleted with their parent element.
+
+
+## Interaction
+
+Interface elements are represented by small circles around their parent elements. Note that you can interact with them via their right-click menu like you can interact with any other elements.
+
+[TODO: insert image]
+
+If the interface is not visible on your connections, make sure that _Connection Controls_ are enabled in the editor's _Options_ Menu tab.
+
+## Right-Click Menu
+
+[TODO]
+
+## Actions
+
+Interface elements do not support [actions](../action) themselves. They change their [states](..#state) automatically with their parentes.
+
+## Configuration
+
+Configuration options highly depend on the device type of the parent device. Please refer to the specific manual page for more information.

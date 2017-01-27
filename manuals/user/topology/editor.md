@@ -17,7 +17,7 @@ The editor consists of two main parts: The _menu_ and the _workspace_:
 ![editor overview](../../img/editor_overview.png)
 
 
-## The Menu
+## <a name="menu"></a>The Menu
 
 {:.alert .alert-danger}
 TODO: Add gifs showing certain functionality.
@@ -30,7 +30,7 @@ The home tab contains the mostly used tools:
 
 ![](../../img/editor-home-tab.png)
 
-* *Modes* selects the mode. This is important since this defines what a left-click will do in the workspace. One of these tools is always active. You can see which mode is active either on these buttons, or on your cursor when hovering over an element.
+* <a name="mode"></a>*Modes* selects the mode. This is important since this defines what a left-click will do in the workspace. One of these tools is always active. You can see which mode is active either on these buttons, or on your cursor when hovering over an element.
  * _Select & Move_: This tool allows you to move elements via drag&drop on the workspace.
  * _Connect_: This tool allows you to connect elements. When the tool is active, click on one element and then on a second one to connect them. To cancel the operation after the first click, click on the same element again.
  * _Delete_: This will delete elements with one click. Caution!
@@ -42,6 +42,8 @@ The home tab contains the mostly used tools:
 ![](../../img/editor-devices-tab.png)
 
 The devices tab contains most [templates](../../element/template) for [device elements](../../element/device). You can add a device to your topology by clicking on one of the buttons there, and then clicking on the target position of the workspace.
+
+There are special _Upload own image_ devices. These are devices which will be prepared directly, and you will be prompted to [upload your own custom image](../../elememt/device/image) directly.
 
 ### Network
 

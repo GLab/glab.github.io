@@ -40,7 +40,7 @@ It is possible to write custom status information into the file _exec\_status/cu
 Please consult the [developer's manual](/manuals/dev) for more information about the creation of executable archives, as well as information about the automization of testing with ToMaTo.
 
 
-## Uploading an Archive
+## <a name="upload"></a>Uploading an Archive
 
 First of all, you have to create an archive containing all required content. This can be any _tar.gz_ archive.
 
@@ -52,9 +52,9 @@ To upload the archive, make sure your device in a state where this is supported.
 
 ### Default Executable Archives
 
-The ToMaTo testbed provides a set of default executable archives. They can be viewed via _Default Executable Archives_ under _Resources_ in the main menu ( [→ go now](https://master.tomato-lab.org/web_resources/executable_archive/)). To use them, select _us a default executable archive_ instead of an upload option and follow the instructions on the screen.
+The ToMaTo testbed provides a set of default executable archives. They can be viewed via _Default Executable Archives_ under _Resources_ in the main menu ([→ go now](https://master.tomato-lab.org/web_resources/executable_archive/)). To use them, select _us a default executable archive_ instead of an upload option and follow the instructions on the screen.
 
-## Downloading an Archive
+## <a name="download"></a>Downloading an Archive
 
 Archve downloading can save you lots of traffic and time compared to downloading the whole [disk image](../image). You should copy all required data into the archive directory before downloading.
 

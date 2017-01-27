@@ -8,7 +8,7 @@ category: manuals
 
 # Elements
 
-Elements are the central entities in your topology. They represent [end-hosts](device), [network infrastructure](switch), other elments' [network interfaces](interface), or connectors to [external networks](external_network).
+Elements are the central entities in your topology. They represent [end-hosts](device), [network infrastructure](switch), other elments' [network interfaces](interface), or connectors to [external networks](external_network). In the editor, they are represented by icons with a name below them.
 
 ## Element Types
 
@@ -25,6 +25,20 @@ There are different types of elements. Element functionality highly depends on t
 {:.alert .alert-info}
 This manual only covers subjects that apply to all elements. For further information, check the manual pages of the respective element type.
 
+## Creation
+
+You can create non-interface elements by selecting the respective type and configuration form the [editor's menu](../topology/editor#menu).
+
+
+## Deletion
+
+Non-interface elements can be deleted form their right-click menu or by using the editor's _Delete_ [mode](../topology/editor#mode).
+Elements can only be deleted in the _created_ [state](#state).
+
+{:.alert .alert-info}
+Deletion and [destruction](state#destroy) are different things.
+
+
 ## Right-Click Menu
 
 Most interactions with your elements is available in their respective right-click menus. To open it, point your mouse over the target element and press the right mouse button.
@@ -39,6 +53,10 @@ The right-click menu of an element usually contains the following functions:
 * *Disk image*: [Disk image](device/image) functions
 * *Executable archive*: [Executable archive](device/executable_archive) functions
 * *Configure*: Opens the element's configuration window.
+
+## Moving Elements
+
+You can move elements in the editor's workspace via Drag & Drop (provided you have selected the respective [mode](../topology/editor#mode) in the editor's home tab). This will not affect your experiment in any way, but it may help you designing the topology.
 
 ## <a name="connection"></a>Connections Between Elements
 
