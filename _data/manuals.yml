@@ -1,5 +1,6 @@
 user:
   title: User Manual
+  indev: true
   pages:
     - title: Home
       id: home
@@ -79,24 +80,28 @@ user:
       id: cli
 accountmanager:
   title: Account Manager Manual
+  indev: true
   pages:
     - title: Home
       id: home
       url: /
 hostmanager:
   title: Host Manager Manual
+  indev: true
   pages:
     - title: Home
       id: home
       url: /
 setup:
   title: Testbed Manager Manual
+  indev: true
   pages:
     - title: Home
       id: home
       url: /
 dev:
   title: Developer's Manual
+  indev: true
   pages:
     - title: Home
       id: home

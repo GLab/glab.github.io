@@ -2,7 +2,11 @@
 layout: default
 category: manuals
 ---
-<div class="alert alert-warning"><strong>The manuals are currently under construction.</strong> Pages may be missing, incomplete, or badly formatted.</div>
+
+{% if site.data.manuals[page.manual].indev %}
+<div class="alert alert-warning"><strong>This manual is currently under construction.</strong> Pages may be missing, incomplete, or badly formatted.</div>
+{% endif %}
+
 <h3>{{site.data.manuals[page.manual].title}}</h3>
 
 <div class="container">
