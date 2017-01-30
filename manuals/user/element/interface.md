@@ -12,7 +12,7 @@ Interface elements are special elements that are attached to other elements and 
 
 ## Creation and Deletion
 
-The editor automatically creates and deletes interface elements with their respective connection. Interface elements area also deleted with their parent element.
+The editor automatically creates and deletes interface elements with their respective [connection](../../connection). Interface elements area also deleted with their parent element.
 
 
 ## Interaction
@@ -25,7 +25,9 @@ If the interface is not visible on your connections, make sure that _Connection 
 
 ## Right-Click Menu
 
-[TODO]
+* *Resource usage*: Information about the interface's [quota](../../account#quota) usage.
+* *Configure*: Opens the config window
+* *Delete*: Delete the interface, and its connection.
 
 ## Actions
 
@@ -33,4 +35,4 @@ Interface elements do not support [actions](../action) themselves. They change t
 
 ## Configuration
 
-Configuration options highly depend on the device type of the parent device. Please refer to the specific manual page for more information.
+Configuration options highly depend on the device type of the parent device. Please refer to the specific manual page ([Container](../device/container#interface_config), [Full](../device/full#interface_config), [Repy](../device/repy#interface_config)) for more information.

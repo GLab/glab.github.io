@@ -16,6 +16,7 @@ There are different types of elements. Element functionality highly depends on t
 
 ![elements of different types](../img/element_types.png)
 
+* [*Devices*](device) are virtual machines representing end-hosts.
 * [*Network Interfaces*](interface) only exist with other elements and represent their network interfaces.
 * [*Switches*](switch) represent network infrastructure
 * [*External networks*](external_network) are connectors to external networks.
@@ -51,9 +52,11 @@ The right-click menu of an element usually contains the following functions:
 * *Connect*: [Connect](#connection) elements
 * [*Actions*](action)
 * *Resource usage*: [Quota](../account#quota) Quota information
+* *Console*: Access to various consoles
 * *Disk image*: [Disk image](device/image) functions
 * *Executable archive*: [Executable archive](device/executable_archive) functions
 * *Configure*: Opens the element's configuration window.
+* *Delete*: Delete the element
 
 ## Moving Elements
 
@@ -93,7 +96,7 @@ The available element functionality highly depends on its state.
 
 ## Configuration Window
 
-Every element has a configuration window which can be accessed via its right-click menu. Please refer to the respective element type's manual page for more information about configuration options.
+Every element has a configuration window which can be accessed via its right-click menu. Please refer to the respective element type's manual page for more information about configuration options. The _help_ button in the top-right corner of configuration window links to the respective information.
 
 
 ## Access to Your Elements

@@ -19,25 +19,23 @@ there are three kinds of devices: [container-based virtualization](container), [
 
 If you want to create an element, but are unsure which type to use, answering these questions will help you selecting the device type:
 
-[TODO: insert from wiki]
+On the first look, full virtualization seems to be the better choice as it allows more operating systems and does not limit operating system functionality. Container-based virtualization though, is a very light-weight solution that gives quick access to Linux machines and is much easier to handle than full virtualization. (E.g. Container-based virtualization allows users to configure that root password or the IP addresses of the interfaces.). Additionally, Full virtualization consumes a lot of resources on the testbed, so it should be avoided if it is not necessary.
 
+This list of criteria can help with the choice:
 
-## Right-Click Menu
-
-The right-click menu highly depend on the device type. These entries are available for all device types:
-
-* [TODO]
-
-Please refer to the individual manual pages for information about more functions.
-
+* Do you need realtime functionality or extremely precise timing? => Use a physical system (not supported by ToMaTo)
+* Do you need to run hardware virtualization inside the device? => Use a physical system
+* Do you want to test your own low-level protocol? => Use Programmable Devices
+* Do you want to apply simple modifications to packets? => Use Programmable Device
+* Do you need an operating system other than Linux? => Use full virtualization
+* Do you need to access the hardware? => Use full virtualization
+* Do you need to modify the kernel or load modules? => Use full virtualization
+* Do you need to setup routing tables, ipables or mount filesystems => Use full virtualization
+* Otherwise => Use container-based virtualization
 
 ## Configuration
 
-Configuaration options highly depend on the device type. These options are available for all device types:
-
-* [TODO]
-
-Please refer to the individual manual pages for information about more configuration options.
+Configuaration options highly depend on the device type. Please refer to the individual manual pages ([Container](container#config), [Full](full#config), [Repy](repy#config)) for information about configuration options.
 
 
 ## Templates and Disk Images
