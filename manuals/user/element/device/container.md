@@ -6,7 +6,7 @@ manpage: element/device/container
 category: manuals
 ---
 
-Container-Based Devices
+# Container-Based Devices
 
 Container-based virtual devices are light-weight virtual machines that translate kernel calls to kernel calls of the host kernel. Container-based virtualization technologies offer complete usermode access to the virtual machines and a limited kernel-mode access. The kernel mode access allows to:
 

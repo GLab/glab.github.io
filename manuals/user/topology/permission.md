@@ -17,7 +17,7 @@ You should not share your user account with other people. Instead, every person 
 
 Users can have multiple _roles_ in the topology:
 
-* *user*: the user has access to elements' consoles, and can use [executable archives](../../element/executable_archive).
+* *user*: the user has access to elements' consoles, and can use [executable archives](../../element/device/executable_archive).
 * *manager*: _user_ permissions, plus the possibility to conduct [actions](../../element/action) to control the topology.
 * *owner*: Full access to every functionality of the topology.
 

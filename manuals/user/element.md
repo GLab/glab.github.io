@@ -38,7 +38,7 @@ Non-interface elements can be deleted form their right-click menu or by using th
 Elements can only be deleted in the _created_ [state](#state).
 
 {:.alert .alert-info}
-Deletion and [destruction](state#destroy) are different things.
+Deletion and [destruction](action#destroy) are different things.
 
 
 ## Right-Click Menu

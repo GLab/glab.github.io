@@ -19,9 +19,6 @@ The editor consists of two main parts: The _menu_ and the _workspace_:
 
 ## <a name="menu"></a>The Menu
 
-{:.alert .alert-danger}
-TODO: Add gifs showing certain functionality.
-
 The menu is the place where you can control the topology and add new [elements](../../element) to it. It consists of five main tabs, each of which will be discussed here:
 
 ### Home
@@ -43,13 +40,13 @@ The home tab contains the mostly used tools:
 
 The devices tab contains most [templates](../../element/template) for [device elements](../../element/device). You can add a device to your topology by clicking on one of the buttons there, and then clicking on the target position of the workspace.
 
-There are special _Upload own image_ devices. These are devices which will be prepared directly, and you will be prompted to [upload your own custom image](../../elememt/device/image) directly.
+There are special _Upload own image_ devices. These are devices which will be prepared directly, and you will be prompted to [upload your own custom image](../../elememt/image) directly.
 
 ### Network
 
 ![](../../img/editor-network-tab.png)
 
-The network tab contains the remaining devices, as well as [external networks](../:./element/external_network).
+The network tab contains the remaining devices, as well as [external networks](../../element/external_network).
 
 ### Topology
 
@@ -82,9 +79,9 @@ The options are in detail:
 * _Fixed positions_: Prevents the user from moving elements
 * _Big workspace_: increases the size of the workspace. The distances between elements will be adapted when resizing. This requires a reload of the topology.
 * _Colorify segments_: Colorify connections based on network segments
-* _Show IDs_: Show element and connection IDs in their right-click menus. This is useful when accessing the topology from the [API](api).
+* _Show IDs_: Show element and connection IDs in their right-click menus. This is useful when accessing the topology from the [API](../../api).
 * _Show element sites_: Show elements' sites in their right-click menu.
-* _Debug mode_: Show a _debug_ menu entry in every right-click menu which grants access to the [API](api) info result. Useful when accessing the topology from the API.
+* _Debug mode_: Show a _debug_ menu entry in every right-click menu which grants access to the [API](../api) info result. Useful when accessing the topology from the API.
 * _Show connection controls_: Show interface elements and the connection handle. This should always be active, but disabling it will result in better-looking screenshots.
 
 {:.alert .alert-warning}

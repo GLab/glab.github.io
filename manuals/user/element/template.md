@@ -8,7 +8,7 @@ category: manuals
 
 # Templates
 
-Templates are the initial [disk images](../image) for [devices](..).
+Templates are the initial [disk images](../device/image) for [devices](..).
 
 ## Available Templates
 

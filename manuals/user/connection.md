@@ -21,7 +21,7 @@ Connections are virtual layer-2 network connections between [elements](../elemen
 
 Connections are affected by the properties of the physical connections that they are transported over. Inside a single site, this is not a big problem, but between different sites, this will effect your experiment. However, this means that you can apply real-world properties to your connections.
 
-The connections inside and between sites are constantly measured by ToMaTo. You can see these measurements in the [sites map](insertlink) by clicking on a site, and then selecting the respective link to the target site. For a connection between prepared and started elements, you can see information about the link in the connection's right-click menu by selecting _[TODO: insert correct thing]_
+The connections inside and between sites are constantly measured by ToMaTo. You can see these measurements in the [sites map](https://master.tomato-lab.org/map/) by clicking on a site, and then selecting the respective link to the target site. For a connection between prepared and started elements, you can see information about the link in the connection's right-click menu by selecting _[TODO: insert correct thing]_
 
 You should carefully select each of your elements' site.
 

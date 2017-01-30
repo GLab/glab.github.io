@@ -8,7 +8,7 @@ category: manuals
 
 # Device Profiles
 
-Device profiles define the available performance of your [devices](../device). [TODO: expand]
+Device profiles define the available performance of your [devices](../device).
 
 Without a restriction, a user may be able to completely congest a host, making other elements on the same host impossible to use.
 To avoid such congestion, the performance of devices is constrained by device profiles. You can select a device profile from the device's configuration window.

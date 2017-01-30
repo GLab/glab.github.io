@@ -17,7 +17,7 @@ Executable archives are good for everything that involves data transfer and uthe
 
 * Install additional software
 * Cofigure software
-* Coordinate the start of software (only via [API](../../api))
+* Coordinate the start of software (only via [API](../../../api))
 * Get notifications when your experiments have been completed
 
 
