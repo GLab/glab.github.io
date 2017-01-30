@@ -8,5 +8,9 @@ category: manuals
 
 # API
 
-{:.alert .alert-danger}
-**This page is currently in development.** Please refer to the respective wiki pages: [API Tutorial](https://github.com/GLab/ToMaTo/wiki/APITutorial) and [API Usage](https://github.com/GLab/ToMaTo/wiki/APITutorial) instead.
+The ToMaTo API is an XML-RPC-based API offering all functionality of ToMaTo.
+
+## Access and Specifications
+
+You can access the ToMaTo via the [command-line interface](../cli), or via a library. Please consult the [developer's manual](/manuals/dev) about detailed API specifications.
+
