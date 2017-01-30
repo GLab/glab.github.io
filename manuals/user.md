@@ -22,7 +22,7 @@ ToMaTo offers two different methods to access it: The _webfrontend_ and the _API
 
 The webfrontend is a fully functional, intuitive client with a graphical [topology editor](topology/editor) running in your web browser. There is no need to install any software on your computer when accessing the testbed via the webfrontend.
 
-The [API}(api) is an RPC-based interface for any program to connect to ToMaTo directly. It is possible to conduct completely automated experiments by writing scripts which make use of the ToMaTo API.
+The [API](api) is an RPC-based interface for any program to connect to ToMaTo directly. It is possible to conduct completely automated experiments by writing scripts which make use of the ToMaTo API.
 There is a [command-line client](cli) which can access the ToMaTo API in a python shell.
 
 ## About This Manual
