@@ -30,23 +30,32 @@ You should carefully select each of your elements' site.
 
 There are two ways to create a connection:
 
+### Via Connect Mode
+
 1. Select the [_Connect_ Mode](../topology/editor#mode)
 2. Click on the first element
 3. Click on the second element
 
-or
+<video autoplay loop>
+	<source src="../vid/connect_mode.m4v" type="video/mp4">
+</video>
+
+### Via Right-Click Menu
 
 1. Right-click on the first element
 2. Select _Connect_
 3. Click on the second element
 
+<video autoplay loop>
+	<source src="../vid/connect_rightclick.m4v" type="video/mp4">
+</video>
+
 When you create a connection, the respective [interface elements](../element/interface) are automatically created.
 
 
-## Interact
+## Right-Click Menu
 
 To open the right-click menu of a connection, click on its _connection handle_. This is the small circle in the middle of the line which represents the connection.
-
 
 ## Delete
 

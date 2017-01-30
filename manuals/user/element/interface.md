@@ -19,7 +19,7 @@ The editor automatically creates and deletes interface elements with their respe
 
 Interface elements are represented by small circles around their parent elements. Note that you can interact with them via their right-click menu like you can interact with any other elements.
 
-[TODO: insert image]
+![](../../img/connection_example.png)
 
 If the interface is not visible on your connections, make sure that _Connection Controls_ are enabled in the editor's _Options_ Menu tab.
 

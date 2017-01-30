@@ -38,6 +38,8 @@ Usage of ToMaTo is subject to a quota restriction, meaning that you cannot prepa
 
 If you exceed your quota, you must contact your administrator for further actions. Your administrator can also disable quota restrictions in case you need to run an expensive experiment.
 
+You can view your resource usage on your [account page](#your_account). Every topology, and every [element](../element) or [connection](../connection) in one of your topologies, has its own _Resource usage_ statistics.
+
 
 ## Notifications
 
@@ -49,7 +51,7 @@ You can disable e-mail notifications by setting the _NoMails_ flag in your accou
 On the notifications page, you can mark notifications as read using the respective button. If you have more than one notification, there will be a button to mark all read on the bottom of the page. You can view read notifications, and even mark them as unread, by clicking on "Show All Notifications" on the top of the page.
 
 
-## Managing your account
+## <a name="your_account"></a>Managing your account
 
 To manage your account, log in to ToMaTo, click on your name in the top-right corner of the page, and select "My Account". [→ go now](https://master.tomato-lab.org/account)
 

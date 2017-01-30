@@ -14,11 +14,9 @@ Elements are the central entities in your topology. They represent [end-hosts](d
 
 There are different types of elements. Element functionality highly depends on the respective element type, and thus, each of them has its own manual page.
 
-[TODO: image showing different element types]
-
+![elements of different types](../img/element_types.png)
 
 * [*Network Interfaces*](interface) only exist with other elements and represent their network interfaces.
-* [*Devices*](device) are end-hosts, usually realized as virtual machines. They can also be used to emulate network infrastructure.
 * [*Switches*](switch) represent network infrastructure
 * [*External networks*](external_network) are connectors to external networks.
 
@@ -29,6 +27,9 @@ This manual only covers subjects that apply to all elements. For further informa
 
 You can create non-interface elements by selecting the respective type and configuration form the [editor's menu](../topology/editor#menu).
 
+<video autoplay loop>
+	<source src="../vid/element_create.m4v" type="video/mp4">
+</video>
 
 ## Deletion
 
@@ -74,7 +75,7 @@ You cannot create a connection when one of the to-be-connected elements is in th
 
 Elements can be in different states. The state indicates the current status of deployment on a host
 
-[TODO: image showing different element states]
+![element states](../img/element_states.png)
 
 The states are:
 

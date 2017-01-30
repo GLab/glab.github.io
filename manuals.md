@@ -40,8 +40,6 @@ If you need to set up and manage a whole ToMaTo testbed, please refer to the tes
 
 </div>
 
-</div>
-
 <div class="col-xs-12 col-md-6" markdown="1">
 
 ## [Developing for ToMaTo](dev)
