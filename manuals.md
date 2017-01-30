@@ -16,7 +16,7 @@ If you are a user of an existing ToMaTo installation, please refer to the user m
 
 </div>
 
-<div class="col-xs-12 col-md-6" markdown="1">
+<!--<div class="col-xs-12 col-md-6" markdown="1">
 
 ## [Host Managers](hostmanager)
 
@@ -46,6 +46,6 @@ If you need to set up and manage a whole ToMaTo testbed, please refer to the tes
 
 This manual will teach you about how to develop executable archives, images, tutorials, or API scripts for ToMaTo.
 
-</div>
+</div>-->
 
 </div>
