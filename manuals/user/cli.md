@@ -18,5 +18,5 @@ You can type `help(function_name)` (e.g., `help(element_create)`) to see the spe
 
 ## API tutorials
 
-The [developer's manual](/manuals/dev) contains tutorials about the usage of the API
+The [advanced user's manual](/manuals/dev) contains tutorials about the usage of the API
 

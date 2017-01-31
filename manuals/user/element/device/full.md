@@ -36,7 +36,7 @@ The console access is realized as vnc connection to the graphics output. The con
 ### Images
 The hard-disk [images](../image) are stored in the qcow2 format. When they are downloaded they can be run in Qemu. Disk images in the qcow2 format can be uploaded and run. For operating systems that have problems with hardware changes, qemu should be configured to emulate the same hardware as in the testbed.
 
-To learn more about the creation of images, consult the [developer's manual](/manuals/dev).
+To learn more about the creation of images, consult the [advanced user's manual](/manuals/dev).
 
 ### Executable Archives
 

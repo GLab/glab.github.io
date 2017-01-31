@@ -39,7 +39,7 @@ When the topology reaches its timeout, all elements will be [stopped](../element
 
 ToMaTo provides tutorials for new users. These tutorials can also be accessed from the topology list page. [→ go now](https://master.tomato-lab.org/tutorial)
 
-It is possible to load third-party tutorials which can also be used for educational purposes. Consult the [developer's manual](/manuals/dev) to learn how to write your own tutorials.
+It is possible to load third-party tutorials which can also be used for educational purposes. Consult the [advanced user's manual](/manuals/dev) to learn how to write your own tutorials.
 
 
 ## <a name="export"></a>Export and Import

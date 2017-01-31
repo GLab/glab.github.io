@@ -44,4 +44,4 @@ This means that the element is removed from the host, and all data associated wi
 
 ## Other Actions
 
-There is other functionality which is implemented as actions. For example, changing a [template](../template) or using [executable archives](../device/executable_archive). However, this has no impact on the user of a webfrontend. If you are interested in more information, consult the [developer's manual](/manuals/dev).
+There is other functionality which is implemented as actions. For example, changing a [template](../template) or using [executable archives](../device/executable_archive). However, this has no impact on the user of a webfrontend. If you are interested in more information, consult the [advanced user's manual](/manuals/dev).

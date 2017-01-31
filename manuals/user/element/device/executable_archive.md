@@ -37,7 +37,7 @@ If there is a so-called start script with filename `auto_exec.sh` in the root of
 
 It is possible to write custom status information into the file `exec_status/custom_status`. This status can be read and is accessible via the ToMaTo API or the webfrontend.
 
-Please consult the [developer's manual](/manuals/dev) for more information about the creation of executable archives, as well as information about the automization of testing with ToMaTo.
+Please consult the [advanced user's manual](/manuals/dev) for more information about the creation of executable archives, as well as information about the automization of testing with ToMaTo.
 
 
 ## <a name="upload"></a>Uploading an Archive

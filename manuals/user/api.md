@@ -12,5 +12,5 @@ The ToMaTo API is an XML-RPC-based API offering all functionality of ToMaTo.
 
 ## Access and Specifications
 
-You can access the ToMaTo via the [command-line interface](../cli), or via a library. Please consult the [developer's manual](/manuals/dev) about detailed API specifications.
+You can access the ToMaTo via the [command-line interface](../cli), or via a library. Please consult the [advanced user's manual](/manuals/dev) about detailed API specifications.
 

@@ -29,7 +29,7 @@ The console access is realized as a shell inside the virtual machine. The access
 ### Images
 The root file-system is stored in a folder on the host machine. The file-system can be download and uploaded as a tar archive compressed with gzip (.tgz or .tar.gz). When extracting or creating such an [image](../image), keep in mind that file ownership can only be set properly if the user has root permissions and all the users and groups in the image exist. When this is not done properly the resulting compressed archive will not be bootable.
 
-To learn more about the creation of images, consult the [developer's manual](/manuals/dev).
+To learn more about the creation of images, consult the [advanced user's manual](/manuals/dev).
 
 ### Executable Archives
 

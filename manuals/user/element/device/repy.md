@@ -29,7 +29,7 @@ Additionally to the console, this log is also available as a full log for downlo
 ### Images
 The Repy scripts of the device can be uploaded and downloaded as [images](../image). A quick sanity check will be performed before the upload.
 
-To learn more about the creation of Repy script, consult the [developer's manual](/manuals/dev).
+To learn more about the creation of Repy script, consult the [advanced user's manual](/manuals/dev).
 
 ### Executable Archives
 There is no support for executable archives for Repy devices.
