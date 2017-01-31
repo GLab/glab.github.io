@@ -1,0 +1,70 @@
+{
+  "file_information": {
+    "version": 4
+  }, 
+  "topology": {
+    "_notes": "This is a demonstration topology for the API tutorial.\n\nIf you have completed this tutorial, you can remove it.", 
+    "connections": [
+      {
+        "elements": [
+          "58909950a058d400084c4ea7", 
+          "58909950a058d400084c4ea8"
+        ], 
+        "id": "58909950a058d400084c4ea9"
+      }
+    ], 
+    "elements": [
+      {
+        "profile": "normal", 
+        "_custom_icon": "", 
+        "_endpoint": true, 
+        "parent": null, 
+        "hostname": "ContainerxBasedxDebian", 
+        "site": null, 
+        "_pos": {
+          "y": 0.39233576642335766, 
+          "x": 0.6082887700534759
+        }, 
+        "gateway6": "", 
+        "gateway4": "", 
+        "template": "debian-8", 
+        "rootpassword": "", 
+        "type": "openvz", 
+        "id": "58909949a058d400084c4ea5", 
+        "name": "Container-Based Debian"
+      }, 
+      {
+        "profile": "normal", 
+        "_custom_icon": "", 
+        "_endpoint": true, 
+        "parent": null, 
+        "usbtablet": true, 
+        "kblang": "de", 
+        "site": null, 
+        "template": "debian-8", 
+        "_pos": {
+          "y": 0.3686131386861314, 
+          "x": 0.3342245989304813
+        }, 
+        "type": "kvmqm", 
+        "id": "5890994aa058d400084c4ea6", 
+        "name": "Full Virtualization Debian"
+      }, 
+      {
+        "id": "58909950a058d400084c4ea7", 
+        "type": "openvz_interface", 
+        "ip4address": "10.0.0.1/24", 
+        "parent": "58909949a058d400084c4ea5", 
+        "name": "eth0"
+      }, 
+      {
+        "type": "kvmqm_interface", 
+        "name": "eth0", 
+        "parent": "5890994aa058d400084c4ea6", 
+        "id": "58909950a058d400084c4ea8"
+      }
+    ], 
+    "name": "API Tutorial Demonstration", 
+    "site": null
+  }
+}
