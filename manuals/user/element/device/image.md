@@ -29,6 +29,11 @@ Changing the template of a _prepared_ device will delete all existing data on th
 You can replace your current disk image with any template while the element is in the _prepared_ state. You can do this by either changing it in the device's config menu, or by right-clicking on the target element, open the _Disk Image_ submenu, and select _Change template_.
 
 
+## <a name="nlXTP"></a>nlXTP Guest Modules
+
+In order for the automatic execution of [executable archives](../executable_archive) to work, the so-called nlXTP guest modules must be installed on the device's image. [TODO: link to more information in testbed admin and developer manual]
+
+
 ## Download Data
 
 {:.alert .alert-info}

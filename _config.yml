@@ -2,7 +2,12 @@ name: ToMaTo
 description: Topology Management Tool Testbed
 url: http://www.tomato-lab.org
 markdown: kramdown
-highlighter: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  fenced_code_blocks: true
+fenced_code_blocks: true
+highlighter: rouge
 baseurl: 
 permalink: pretty
 paginate: 5

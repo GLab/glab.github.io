@@ -38,6 +38,12 @@ The hard-disk [images](../image) are stored in the qcow2 format. When they are d
 
 To learn more about the creation of images, consult the [developer's manual](/manuals/dev).
 
+### Executable Archives
+
+Executable archives can be uploaded only when the device is _prepared_. However, download, custom status, and execution monitoring are also available while the device is started. Automatic execution is possible only when [nlXTP guest modules](../image#nlXTP) are installed on the image.
+
+The archive directory is **not** part of the device's image. It is a separate device which is mounted separately by your system.
+
 ### Technologies
 ToMaTo supports the following technologies for full virtualization:
 * KVM (preferred) (in stable, but not deployed)

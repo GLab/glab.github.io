@@ -106,4 +106,40 @@ dev:
     - title: Home
       id: home
       url: /
-
+      indent: 0
+    - title: Executable Archives
+      id: rextfv
+      indent: 0
+    - title: Upload
+      id: rextfv/upload
+      indent: 1
+    - title: Automatic Execution
+      id: rextfv/auto_exec
+      indent: 1
+    - title: Custom Status
+      id: rextfv/custom_status
+      indent: 1
+    - title: Download
+      id: rextfv/download
+      indent: 1
+    - title: Repy
+      id: repy
+      indent: 0
+    - title: Images
+      id: image
+      indent: 0
+    - title: Tools
+      id: tools
+      indent: 0
+    - title: API Tutorials
+      id: api_tutorial
+      indent: 0
+    - title: Examples
+      id: examples
+      indent: 0
+    - title: Executable Archives
+      id: examples/executable_archive
+      indent: 1
+    - title: API References
+      id: api_references
+      indent: 0

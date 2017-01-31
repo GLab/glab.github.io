@@ -31,6 +31,12 @@ The root file-system is stored in a folder on the host machine. The file-system 
 
 To learn more about the creation of images, consult the [developer's manual](/manuals/dev).
 
+### Executable Archives
+
+Executable archives can be uploaded and downloaded when the device is _prepared_ or _started_. Automatic execution is possible only when [nlXTP guest modules](../image#nlXTP) are installed on the image.
+
+The archive directory is part of the device's image. It can be found at `/mnt/nlXTP`
+
 ### Technologies
 ToMaTo supports the following technologies for container-based virtualization:
 * LXC (preferred)

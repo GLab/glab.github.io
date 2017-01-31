@@ -31,6 +31,9 @@ The Repy scripts of the device can be uploaded and downloaded as [images](../ima
 
 To learn more about the creation of Repy script, consult the [developer's manual](/manuals/dev).
 
+### Executable Archives
+There is no support for executable archives for Repy devices.
+
 ## <a name="config"></a> Configuration Window
 
 ### Name

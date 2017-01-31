@@ -33,20 +33,20 @@ How the archive directory is realized and possible restrictions are discussed in
 
 If the nlXTP guest modules are installed, the following command-and-control interface is available.
 
-If there is a so-called start script with filename _auto\_exec.sh_ in the root of the archive, this script will be executable automatically after an upload. The status of this script will be constantly monitored by writing certain files into a directory called _exec\_status_ inside the archive directory. The standard output of the start script will be saved to _exec\_status/out_ and will be included in an archive download.
+If there is a so-called start script with filename `auto_exec.sh` in the root of the archive, this script will be executable automatically after an upload. The status of this script will be constantly monitored by writing certain files into a directory called `exec_status` inside the archive directory. The standard output of the start script will be saved to `exec\_status/out` and will be included in an archive download.
 
-It is possible to write custom status information into the file _exec\_status/custom\_status_. This status can be read and is accessible via the ToMaTo API or the webfrontend.
+It is possible to write custom status information into the file `exec_status/custom_status`. This status can be read and is accessible via the ToMaTo API or the webfrontend.
 
 Please consult the [developer's manual](/manuals/dev) for more information about the creation of executable archives, as well as information about the automization of testing with ToMaTo.
 
 
 ## <a name="upload"></a>Uploading an Archive
 
-First of all, you have to create an archive containing all required content. This can be any _tar.gz_ archive.
+First of all, you have to create an archive containing all required content. This can be any tar.gz archive.
 
-If you want automatic execution of commands, you have to put a bash script in the root directory of the archive called _auto\_exec.sh_. This script will be executing with the working directory set to the archive directory. In it, you can use the variable _$archive\_directory_, which contains its path, and the function _archive\_setstatus_ which will write all its arguments to the custom status, overwriting the previous one.
+If you want automatic execution of commands, you have to put a bash script in the root directory of the archive called `auto\_exec.sh`. This script will be executing with the working directory set to the archive directory. In it, you can use the variable `$archive\_directory`, which contains its path, and the function `archive\_setstatus` which will write all its arguments to the custom status, overwriting the previous one.
 
-You should not include a directory called _exec\_status_ in your archive.
+You should not include a directory called `exec\_status` in your archive.
 
 To upload the archive, make sure your device in a state where this is supported. Right-click on the device in the editor, open the _Executable Archives_ sub-menu, and select one of the upload options.
 
