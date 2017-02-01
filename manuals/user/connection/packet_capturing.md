@@ -31,7 +31,7 @@ When you set packet capturing for live viewing, the connection's right-click men
 
 ## Timestamps
 
-The timestamp in the capture files do not exactly correspond with the time of sending the packet in the virtual machine since the scheduling might introduce a delay. However the timestamp is guaranteed to be between the time of sending and the time of the forwarding to the connection.
+The timestamp in the capture files do not exactly correspond with the time of sending the packet in the virtual machine since the scheduling might introduce a delay. However the timestamp is guaranteed to be between the time of sending the packet and the time of forwarding it to the connection.
 
 Also note that [hosts](../../site_host) (which are distributed over multiple continents) may have a clock offset to each other, which is usually below 1s.
 
@@ -42,6 +42,6 @@ ToMaTo generates capture files in the [pcap format](http://en.wikipedia.org/wiki
 
 The capture files created by ToMaTo can be used by a lot different programs:
 
-* [Wireshark](http://www.wireshark.org) - a graphical pcap explorer an analysis tool
-* [tcpreplay](http://tcpreplay.synfin.net/) - a Linux tool to replay pcap files
+* [Wireshark](http://www.wireshark.org) - A graphical pcap explorer and analysis tool
+* [tcpreplay](http://tcpreplay.synfin.net/) - A Linux tool to replay pcap files
 

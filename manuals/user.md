@@ -29,4 +29,4 @@ There is a [command-line client](cli) which can access the ToMaTo API in a pytho
 
 All links in this manual link to the official ToMaTo testbed. If you are using a different installation, please modify the links accordingly before clicking on them.
 
-If not stated otherwise, all instructions are giving for using the webfrontend.
+If not stated otherwise, all instructions are intended for using the webfrontend.

@@ -13,7 +13,7 @@ Each device uses its own private disk image. This can be used to store any data,
 To understand what data the disk image contains, please refer to the respective device type's manual page.
 
 {:.alert .alert-info}
-Data on your device is safe unless you [destroy](../../action#destroy) them or [change their template](../../template#change). Note that automatic desctruction can occur due to [topology timeout](../../../topology#timeout).
+Data on your device is safe unless you [destroy](../../action#destroy) them or [change their template](../../template#change). Note that automatic destruction can occur due to [topology timeout](../../../topology#timeout).
 
 
 ## Templates

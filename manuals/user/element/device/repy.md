@@ -6,11 +6,11 @@ manpage: element/device/repy
 category: manuals
 ---
 
-Programmable Devices (Repy)
+# Programmable Devices (Repy)
 
-Programmable devices are essentially scripts that can work with networking packages. These scripts can be written in a Python dialect called [[Repy]] and can read and write raw Ethernet packets to/from their network interfaces. Programmable devices are very light-weight as they are just small Python scripts.
+Programmable devices are essentially scripts that can work with networking packages. These scripts can be written in a Python dialect called _Repy_ and can read and write raw Ethernet packets to/from their network interfaces. Programmable devices are very light-weight as they are just small Python scripts.
 
-Repy is a turing-complete subset of Python that allows to run in a sandboxed environment.
+Repy is a turing-complete subset of Python that allows to be run in a sandboxed environment.
 ToMaTo adds the following functionality to Repy:
 
  * Reading raw packets from networking devices
@@ -29,10 +29,10 @@ Additionally to the console, this log is also available as a full log for downlo
 ### Images
 The Repy scripts of the device can be uploaded and downloaded as [images](../image). A quick sanity check will be performed before the upload.
 
-To learn more about the creation of Repy script, consult the [advanced user's manual](/manuals/dev).
+To learn more about the creation of Repy scripts, consult the [advanced user's manual](/manuals/dev).
 
 ### Executable Archives
-There is no support for executable archives for Repy devices.
+Executable archives are not supported in Repy devices.
 
 ## <a name="config"></a> Configuration Window
 
@@ -46,11 +46,11 @@ The on-screen name of the device. This setting will not affect your experiment.
 
 ### Performance Profile
 
-[Device profile](../profile) that will applied to this element.
+[Device profile](../profile) that will be applied to this element.
 
 ### Template
 
-[Template](../template) that will be used when [preparing](../../action#prepare) this element. When your device is [prepared](../..#state), you can exchange the template.
+[Template](../template) that will be used when [preparing](../../action#prepare) this element. When your device is [prepared](../..#state), you can still exchange the template.
 
 {:.alert .alert-warning}
 Changing the template of a _prepared_ device will delete all existing data on the device's current disk image.
