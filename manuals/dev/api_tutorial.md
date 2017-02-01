@@ -18,9 +18,10 @@ The tutorials will not contain many links to the API reference. It is your job t
 ## Getting Started
 
 First, you should [install the ToMaTo tools](../tools).
+
 * [Introduction](introduction) - Log in to the CLI and access your data. Get help from the graphical topology editor
 * [First Topology](first_topology) - Create and use a topology manually
-* [Import and Executable Archives](executable_archive) - Import of a topology nad batch upload of executable archives
+* [Topology Import and Executable Archives](executable_archive) - Import of a topology nad batch upload of executable archives
 
 ## Scripting
 
