@@ -18,13 +18,13 @@ By now, only Linux is supported.
 
 First, you should install the dependencies:
 {% highlight shell %}
-$ sudo apt-get install python git
+$ sudo apt-get install python python-openssl git
 {% endhighlight %}
 
 Then, you can clone the [official GitHub repository](https://github.com/GLab/ToMaTo):
 {% highlight shell %}
-cd ~
-git clone https://github.com/GLab/ToMaTo.git
+$ cd ~
+$ git clone https://github.com/GLab/ToMaTo.git
 {% endhighlight %}
 
 The tools will then be located at `~/ToMaTo/cli`. You may choose a different location, but you might need to change the paths in this directory accordingly.
