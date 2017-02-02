@@ -167,9 +167,14 @@ You are now done, so please clean up:
 
 ## Conclusion
 
-[TODO]
+You have now learned how to import a topology and use executable archives from the API. This is a critical part of experiment automization because this allows you to conduct all steps from setting up a topology to installing, configuring and starting test procedures as well as collecting results.
 
 ## Continue
 
-[TODO]
+The CLI may be a great tool to learn the usage of the API or to loop over elements, but accessing ToMaTo with a shell is not that intuitive. Instead of a shell, you may want to run automated scripts, or even integrate ToMaTo into a larget program. This is what the next tutorials are about.
+
+{:.alert alert-info}
+The next tutorials require at least a beginner-level knowledge of the Python programming language. If you are not familiar with it, you should work through the [Python tutorials](https://docs.python.org/2.7/tutorial/) now.
+
+In the [next tutorial](../cli_scripts), you will learn how to use an API script to install two pieces of software, start an experiment, and collect data; all with a single script.
 

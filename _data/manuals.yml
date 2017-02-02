@@ -152,6 +152,9 @@ dev:
     - title: Topology Import and Executable Archives
       id: api_tutorial/executable_archive
       indent: 1
+    - title: CLI Scripting
+      id: api_tutorial/cli_scripts
+      indent: 1
     - title: Examples
       id: examples
       indent: 0
