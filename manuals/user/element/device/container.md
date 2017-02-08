@@ -8,7 +8,9 @@ category: manuals
 
 # Container-Based Devices
 
-Container-based virtual devices are light-weight virtual machines that translate kernel calls to kernel calls of the host kernel. Container-based virtualization technologies offer complete usermode access to the virtual machines and a limited kernel-mode access. The kernel mode access allows to:
+Container-based virtual devices are light-weight virtual machines that translate kernel calls to kernel calls of the host kernel.
+Container-based virtualization technologies offer complete usermode access to the virtual machines and a limited kernel-mode access.
+The kernel mode access allows to:
 
   * Manage networking hardware
   * Use raw sockets
@@ -21,13 +23,18 @@ Container-based virtual devices are light-weight virtual machines that translate
   * No graphical hardware, and thus no desktop environment possible
 
 ### Console
-The console access is realized as a shell inside the virtual machine. The access is comparable to an ssh session. Multiple concurrent windows will show the same console but when all windows showing the console are closed, the console will be terminated and the next window will show a new clean console. This has several implications:
-* The console does not require any login. This does not mean that the system is insecure, the ssh server will prompt for a login as normal.
-* The console is text-based, so no graphical programs can be executed.
-* The meaning of pressed keys depends on the keyboard layout of the real keyboard of the user.
+The console access is realized as a shell inside the virtual machine. The access is comparable to an ssh session, which runs an extra screen.
+Multiple concurrent windows will show the same console but when all windows showing the console are closed, the console will not be terminated. This has several implications:
+
+  * The console does not require any login. This does not mean that the system is insecure, the ssh server will prompt for a login as normal.
+  * The console is text-based, so no graphical programs can be executed.
+  * The meaning of pressed keys depends on the keyboard layout of the real keyboard of the user.
+  * The console history is preserved.
 
 ### Images
-The root file-system is stored in a folder on the host machine. The file-system can be download and uploaded as a tar archive compressed with gzip (.tgz or .tar.gz). When extracting or creating such an [image](../image), keep in mind that file ownership can only be set properly if the user has root permissions and all the users and groups in the image exist. When this is not done properly the resulting compressed archive will not be bootable.
+The root file-system is stored in a folder on the host machine. The file-system can be download and uploaded as a tar archive compressed with gzip (.tgz or .tar.gz).
+When extracting or creating such an [image](../image), keep in mind that file ownership can only be set properly if the user has root permissions and all the users and groups in the image exist.
+When this is not done properly the resulting compressed archive will not be bootable.
 
 To learn more about the creation of images, consult the [advanced user's manual](/manuals/dev).
 
@@ -39,8 +46,9 @@ The archive directory is part of the device's image. It can be found at `/mnt/nl
 
 ### Technologies
 ToMaTo supports the following technologies for container-based virtualization:
-* LXC (preferred)
-* OpenVZ
+
+  * LXC (preferred)
+  * OpenVZ
 
 ## <a name="config"></a> Configuration Window
 
@@ -54,18 +62,22 @@ The on-screen name of the device. This setting will not affect your experiment.
 
 ### Performance Profile
 
-[Device profile](../profile) that will applied to this element.
+[Device profile](../profile) that will be applied to this element.
 
 ### Template
 
-[Template](../template) that will be used when [preparing](../../action#prepare) this element. When your device is [prepared](../..#state), you can exchange the template.
+[Template](../template) that will be used when [preparing](../../action#prepare) this element. When your device is [prepared](../..#state), you can still exchange the template.
 
 {:.alert .alert-warning}
 Changing the template of a _prepared_ device will delete all existing data on the device's current disk image.
 
 ### Segment separation
 
-[TODO]
+As long as the _Colorify segments_ option in the topology editor is activated,
+ToMaTo highlights separated networks as different segments.
+Elements can be defined as connecting elements to combine different network segments.
+This does not have any direct effect on the network infrastructure and is **ONLY** for usability purposes.
+It allows to mark devices which interconnect networks to increase the overview of the topology.
 
 ### Custom Icon
 

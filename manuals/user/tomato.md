@@ -21,13 +21,13 @@ When conducting an experiment, a user will design and create a [topology](../top
 
 ## Federations
 
-The ToMaTo testbed consists of multiple organizations, i.e., a university company, or similar entity. Every user and every host belongs to an organization. The distinction of organization allows a more fine-grained setting of permissions.
+The ToMaTo testbed consists of multiple organizations, i.e., a university company, or similar entity. Every user and every host belongs to an organization. The distinction of organizations allows a more fine-grained setting of permissions.
 The organizations taking part in the ToMaTo testbeds form the _ToMaTo consortium_.
 
 {:.alert .alert-info}
-You can see the member of the ToMaTo consortium [here](https://master.tomato-lab.org/organization/).
+You can see the members of the ToMaTo consortium [here](https://master.tomato-lab.org/organization/).
 
 ## User Accounts
 
-User accounts, [including yours](../account), are the key to access ToMaTo. Every user account has certain permissions on what they can do in ToMaTo. Access to topologies is also subject to authorization, meaning that different users may have access to different kinds of operations on different topologies. Depending on the permissions, a user account can, in addition to running experiments, manage users or hosts of its own organization, manage resources like [templates](../element/template), or monitor the status of the whole testbed infrastructure. If you have access to these advanced permissions, you should conduct the [respective manual](/manuals) for these.
+User accounts, [including yours](../account), are the key to access ToMaTo. Every user account has certain permissions on what they can do in ToMaTo. Access to topologies is also subject to authorization, meaning that different users may have access to different kinds of operations on different topologies. Depending on the permissions, a user account can, in addition to running experiments, manage users or hosts of its own organization, manage resources like [templates](../element/template), or monitor the status of the whole testbed infrastructure. If you have access to these advanced permissions, you should read the [respective manual](/manuals) for these. [TODO: Create correct link to an advanced permission manual]
 

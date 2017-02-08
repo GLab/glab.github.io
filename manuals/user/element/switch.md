@@ -6,8 +6,16 @@ manpage: element/switch
 category: manuals
 ---
 
-{:.alert .alert-danger}
-**This page is currently in development.** Please refer to our [wiki](https://github.com/GLab/ToMaTo/wiki) or [code documentation](https://tomato.readthedocs.io/en/latest/) instead.
+# Switches
 
-{:.alert .alert-info}
-As long as you have not explicitly connected elements to the Internet, there is no network connection between any element and the Internet.
+![](../../img/switches.png)
+
+Switches are part of the VPN elements of ToMaTo. They allow to connect devices with each other in virtual private networks.
+Hence connected elements are isolated from other elements or the internet as long as they are not connected to each other (or the internet).
+
+Currently there are 3 types of switches available:
+
+  * Hub: Incoming packets will be broadcasted to **all** connected devices. It uses _Tinc VPN_ to connect elements with each other.
+  * Switch (Tinc): Forwards packets targeted to a specific port. It also uses _Tinc VPN_.
+  * Switch (VpnCloud): Forwards packets targeted to a specific port. It uses VpnCloud, vpn solution using UDP, for more information [→ go now](https://github.com/dswd/vpncloud.rs).
+

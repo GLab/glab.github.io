@@ -22,7 +22,7 @@ There are different types of elements. Element functionality highly depends on t
 * [*External networks*](external_network) are connectors to external networks.
 
 {:.alert .alert-info}
-This manual only covers subjects that apply to all elements. For further information, check the manual pages of the respective element type.
+This manual page only covers subjects that apply to all elements. For further information, check the manual pages of the respective element type.
 
 ## Creation
 
@@ -34,7 +34,7 @@ You can create non-interface elements by selecting the respective type and confi
 
 ## Deletion
 
-Non-interface elements can be deleted form their right-click menu or by using the editor's _Delete_ [mode](../topology/editor#mode).
+Non-interface elements can be deleted via their right-click menu or by using the editor's _Delete_ [mode](../topology/editor#mode).
 Elements can only be deleted in the _created_ [state](#state).
 
 {:.alert .alert-info}
@@ -43,7 +43,7 @@ Deletion and [destruction](action#destroy) are different things.
 
 ## Right-Click Menu
 
-Most interactions with your elements is available in their respective right-click menus. To open it, point your mouse over the target element and press the right mouse button.
+Most interactions with your elements are available in their respective right-click menus. To open it, point your mouse over the target element and press the right mouse button.
 
 ![right-click menu](../img/element-rightclick.png)
 
@@ -57,6 +57,9 @@ The right-click menu of an element usually contains the following functions:
 * *Executable archive*: [Executable archive](device/executable_archive) functions
 * *Configure*: Opens the element's configuration window.
 * *Delete*: Delete the element
+
+{:.alert .alert-info}
+The available functionalities in the right-click menu differ depending on the type and state of an element.
 
 ## Moving Elements
 
@@ -76,7 +79,7 @@ You cannot create a connection when one of the to-be-connected elements is in th
 
 ## <a name="state"></a>States
 
-Elements can be in different states. The state indicates the current status of deployment on a host
+Elements can be in different states. The state indicates the current status of deployment on a host. The state is indicated by an smal icon at the element.
 
 ![element states](../img/element_states.png)
 
@@ -87,20 +90,14 @@ The states are:
 * *started*: The element is deployed on a host and running.
 
 {:.alert .alert-info}
-Some types of elements do not support the _started_ state.
+Some types of elements do not support the _prepared_ state.
 
-To change the state of an element, you have to run the specific [actions](action).
+To change the state of an element, you have to run the specific [action](action).
 
 The available element functionality highly depends on its state.
 
 
 ## Configuration Window
 
-Every element has a configuration window which can be accessed via its right-click menu. Please refer to the respective element type's manual page for more information about configuration options. The _help_ button in the top-right corner of configuration window links to the respective information.
-
-
-## Access to Your Elements
-
-Almost all functions to access your elements are available from their right-click menu. See the respective element type for more details.
-
+Every element has a configuration window which can be accessed via its right-click menu. Please refer to the respective element type's manual page for more information about configuration options. The _help_ button in the top-right corner of the configuration window links to the respective information.
 

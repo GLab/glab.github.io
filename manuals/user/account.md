@@ -57,4 +57,4 @@ To manage your account, log in to ToMaTo, click on your name in the top-right co
 
 On your account page, you can view your account settings, view statistics about your resource usage, edit your account information, reset your password, or completely remove your account.
 
-_Flags_ are a mix of permissions and settings. As a normal user, the only interesting thing for you is 
+_Flags_ are a mix of permissions and settings. As a normal user, the only interesting thing for you is [TODO: Maybe finish this sentence?]

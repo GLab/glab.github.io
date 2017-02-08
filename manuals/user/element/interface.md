@@ -12,7 +12,7 @@ Interface elements are special elements that are attached to other elements and 
 
 ## Creation and Deletion
 
-The editor automatically creates and deletes interface elements with their respective [connection](../../connection). Interface elements area also deleted with their parent element.
+The editor automatically creates and deletes interface elements with their respective [connection](../../connection). Interface elements are also deleted with their parent element.
 
 
 ## Interaction
@@ -21,17 +21,18 @@ Interface elements are represented by small circles around their parent elements
 
 ![](../../img/connection_example.png)
 
+{:.alert .alert-info}
 If the interface is not visible on your connections, make sure that _Connection Controls_ are enabled in the editor's _Options_ Menu tab.
 
 ## Right-Click Menu
 
 * *Resource usage*: Information about the interface's [quota](../../account#quota) usage.
-* *Configure*: Opens the config window
+* *Configure*: Opens the config window.
 * *Delete*: Delete the interface, and its connection.
 
 ## Actions
 
-Interface elements do not support [actions](../action) themselves. They change their [states](..#state) automatically with their parentes.
+Interface elements do not support [actions](../action) themselves. They change their [states](..#state) automatically with their parents.
 
 ## Configuration
 
