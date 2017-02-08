@@ -6,15 +6,20 @@ manpage: element/external_network
 category: manuals
 ---
 
-# External Network
+# External Network Connectors
 
-External Networks allow access to external networks or testbeds.
-External networks have to be defined and configured by hostmanagers or administrators.
+External Network Connectors allow access to external networks or testbeds.
+A list of available external networks to choose from is available at _External Network_ under the _Resources_ entry in the main menu. ([→ go now](https://master.tomato-lab.org/external_network/))
+
 If the external network is located on a different site than the rest of the connected elements, 
 packets have to be forwarded to this site and hence have a higher delay.
 
 {:.alert .alert-warning}
-Network segments should not have multiple network exits. This could cause loops in the network and hence network crashes.
+Network segments should not have multiple network exits. This could cause loops in the network and result in network crashes.
+
+## Configuration
+
+An external network connector element has the following configuration options
 
 ### Kind
 

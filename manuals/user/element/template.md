@@ -12,7 +12,7 @@ Templates are the initial [disk images](../device/image) for [devices](..).
 
 ## Available Templates
 
-To see a list of available templates, click on _Templates_ under _Resources_ in the main menu. [](https://master.tomato-lab.org/template/) The list of templates contains the most important information, and you can see more information about a template by hovering your mouse over the icons in the right column. To see even more information about templates, you can click on the template's name.
+To see a list of available templates, click on _Templates_ under _Resources_ in the main menu. ([→ go now](https://master.tomato-lab.org/template/)) The list of templates contains the most important information, and you can see more information about a template by hovering your mouse over the icons in the right column. To see even more information about templates, you can click on the template's name.
 
 Some templates are limited due to copyright. To get access to them, you have to ask your administrator.
 
