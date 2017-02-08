@@ -8,7 +8,7 @@ category: manuals
 
 # Examples: Executable Archives
 
-This page contains a number of example executable archives. Some archives contain links too 
+This page contains a number of example executable archives. Some archives contain links too.
 
 ## Software Installer
 

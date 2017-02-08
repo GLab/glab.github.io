@@ -79,7 +79,7 @@ You cannot create a connection when one of the to-be-connected elements is in th
 
 ## <a name="state"></a>States
 
-Elements can be in different states. The state indicates the current status of deployment on a host. The state is indicated by an smal icon at the element.
+Elements can be in different states. The state indicates the current status of deployment on a host. The state is indicated by a small icon at the element.
 
 ![element states](../img/element_states.png)
 

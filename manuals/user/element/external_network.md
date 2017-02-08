@@ -10,7 +10,8 @@ category: manuals
 
 External Networks allow access to external networks or testbeds.
 External networks have to be defined and configured by hostmanagers or administrators.
-If the external networks
+If the external network is located on a different site than the rest of the connected elements, 
+packets have to be forwarded to this site and hence have a higher delay.
 
 {:.alert .alert-warning}
 Network segments should not have multiple network exits. This could cause loops in the network and hence network crashes.
@@ -22,7 +23,7 @@ ToMaTo uses a hierarchical order for network kinds.
 
 For example:
 If a user chooses an external network of kind _Internet_, he allows ToMaTo to choose from any defined internet connection from any site.
-Whereas a user choosing an external network of kind _Internet (TU KL)_, he restricts the tunnel to a network bridge on a host from TU KL.
+Whereas if a user chooses an external network of kind _Internet (TU KL)_, he restricts the connection to a host from TU KL.
 
 ### Same Network
 
