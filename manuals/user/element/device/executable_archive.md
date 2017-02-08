@@ -36,7 +36,7 @@ How the archive directory is realized and possible restrictions are discussed in
 
 If the nlXTP guest modules are installed, the following command-and-control interface is available.
 
-If there is a so-called start script with filename `auto_exec.sh` in the root of the archive, this script will be executable automatically after an upload. The status of this script will be constantly monitored by writing certain files into a directory called `exec_status` inside the archive directory. The standard output of the start script will be saved to `exec_status/out` and will be included in an archive download.
+If there is a so-called start script with filename `auto_exec.sh` in the root of the archive, this script will be executed automatically after an upload. The status of this script will be constantly monitored by writing certain files into a directory called `exec_status` inside the archive directory. The standard output of the start script will be saved to `exec_status/out` and will be included in an archive download.
 
 It is possible to write custom status information into the file `exec_status/custom_status`. This status can be read and is accessible via the ToMaTo API or the webfrontend.
 
@@ -50,7 +50,7 @@ Please consult the [advanced user's manual](/manuals/dev) for more information a
 First of all, you have to create an archive containing all required content. This can be any tar.gz archive.
 
 If you want automatic execution of commands, you have to put a bash script in the root directory of the archive called `auto_exec.sh`.
-This script will be executing with the working directory set to the archive directory. In it, you can use the variable `$archive_directory`, which contains its path, and the function `archive_setstatus` which will write all its arguments to the custom status, overwriting the previous one.
+This script will be executed with the working directory set to the archive directory. In it, you can use the variable `$archive_directory`, which contains its path, and the function `archive_setstatus` which will write all its arguments to the custom status, overwriting the previous one.
 
 You should not include a directory called `exec_status` in your archive.
 
