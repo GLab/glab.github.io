@@ -54,4 +54,4 @@ You can import the exported file on the topology list page.
 You can remove the topology via the editor by clicking on the _Delete_ button in the _Topology_ tab.
 
 {:.alert .alert-danger}
-** Removing a topology will [destroy](../element/action#destroy) all elements of this topology, hence removing all respective data belonging to these elements from the system!
+Removing a topology will [destroy](../element/action#destroy) all elements of this topology, hence removing all respective data belonging to these elements from the system!

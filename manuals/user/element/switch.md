@@ -8,6 +8,8 @@ category: manuals
 
 # Switches
 
+![](../../img/switches.png)
+
 Switches are part of the VPN elements of ToMaTo. They allow to connect devices with each other in virtual private networks.
 Hence connected elements are isolated from other elements or the internet as long as they are not connected to each other (or the internet).
 
