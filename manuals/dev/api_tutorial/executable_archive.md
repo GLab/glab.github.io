@@ -12,13 +12,14 @@ Welcome to the third API tutorial. In this tutorial, you will learn how to impor
 
 ## Preparation
 
-For this tutorial, you need to files:
-* The [domonstration topology export](../introduction_demonstration.tomato4.json)
+For this tutorial, you need two files:
+
+* The [demonstration topology export](../introduction_demonstration.tomato4.json)
 * The [demonstration executable archive](../demo_archive.tar.gz)
 
 Please download them now. Open a CLI instance. In the following, the filenames are assumed to be `/tmp/introduction_demonstration.tomato4.json` and `/tmp/demo_archive.tar.gz`. If you use different paths, please update them in the commands.
 
-You should also invastigate the demonstration executable archive to understand what it will do: Wait 120 minutes, then set a custom status.
+You should also investigate the demonstration executable archive to understand what it will do: Wait 120 minutes, then set a custom status.
 
 ## Importing the topology
 
@@ -39,19 +40,20 @@ In a next step, we can import the topology. we should save the result:
 {% endhighlight %}
 
 You now have three result variables:
+
 * `topology_id` contains the new topology's ID
 * `id_mapping` is a mapping from the IDs in the import to the IDs of the new elements and connections. This can help you identifying the new elements. Since IDs have to be unique on the testbed, the old IDs cannot be used in the new topology.
-* `errors contains error messages during the import. You should check if you have received error messages.
+* `errors` contains error messages during the import. You should check if you have received error messages.
 
 ## Finding the Container Element
 
 We want to use the container-based element in this topology to upload executable archives to.
 
-You have at least three options how to find the target element now. For practice, let's play through all of them:
+You have at least three options how to find the target element now. For practice, let's review all of them:
 
 ### Using the ID Mapping
 
-Open the topology export file with an editor and locate the element with the name "Container-Based Debian". Then read its ID. Then, run the following code
+Open the topology export file with an editor and locate the element with the name "Container-Based Debian". Then read its ID and run the following code
 {% highlight python %}
 # Lines starting with "#" are comments. You do not need to type them in the CLI.
 # First, save the ID you just found as the variable "src_id".
@@ -171,7 +173,7 @@ You have now learned how to import a topology and use executable archives from t
 
 ## Continue
 
-The CLI may be a great tool to learn the usage of the API or to loop over elements, but accessing ToMaTo with a shell is not that intuitive. Instead of a shell, you may want to run automated scripts, or even integrate ToMaTo into a larget program. This is what the next tutorials are about.
+The CLI may be a great tool to learn the usage of the API or to loop over elements, but accessing ToMaTo with a shell is not that intuitive. Instead of a shell, you may want to run automated scripts, or even integrate ToMaTo into a larger program. This is what the next tutorials are about.
 
 {:.alert alert-info}
 The next tutorials require at least a beginner-level knowledge of the Python programming language. If you are not familiar with it, you should work through the [Python tutorials](https://docs.python.org/2.7/tutorial/) now.

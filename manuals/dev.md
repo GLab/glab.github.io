@@ -8,7 +8,7 @@ category: manuals
 
 # Home
 
-This is the ToMaTo advanced user's manual. This will teach you the advanced functionality of ToMaTo, allowing you to create powerful tools and scripts to precisely control your ToMaTo experiments.
+This is the ToMaTo advanced user's manual. This will teach you the advanced functionalities of ToMaTo, allowing you to create powerful tools and scripts to precisely control your ToMaTo experiments.
 
 ## Prerequisites
 

@@ -8,7 +8,7 @@ category: manuals
 
 # Examples: Executable Archives
 
-This page contains a number of example executable archives. Some archives contain links to 
+This page contains a number of example executable archives. Some archives contain links too 
 
 ## Software Installer
 
@@ -31,7 +31,7 @@ and your executable archive's file structure looks like this:
 
 ## <a name="autoconfig"></a>Automatic Configuration
 
-In this example, you have two executables: `client` and `server`. You want to install both to `/testsoftware`, and a script called `/start` which will automatically start the correct software. Whether this is the server or client application is determined by the element's hostname, which can be set in container-based elements' configuration windows.
+In this example, you have two executables: `client` and `server`. You want to install both to `/testsoftware`, and run a script called `/start` which will automatically start the correct software. Whether this is the server or client application is determined by the element's hostname, which can be set in container-based elements' configuration windows.
 
 Your `auto_exec.sh` script should like this:
 {% highlight bash %}
@@ -84,7 +84,7 @@ cd /
 ./start
 {% endhighlight %}
 
-Instead of relying on automatic config, you can of course send any other command this way, for example:
+Instead of relying on automatic configuration, you can of course send any other command this way, for example:
 
 {% highlight bash %}
 #!/bin/bash
@@ -98,7 +98,7 @@ This is an easy example how you can transmit commands without any payload.
 
 ## Packet Finder
 
-This is a simple version of the [packet manager](/manuals/dev/tools/getpackages): this script shall give us a list of packages to be installed, and their URLs. In order to do this, this will be uploaded to a Debian element which is connected to the Internet.
+This is a simple version of the [packet manager](/manuals/dev/tools/getpackages): this script should give us a list of packages to be installed, and their URLs. In order to do this, this will be uploaded to a Debian element which is connected to the Internet.
 
 To do this, you can use a start script which reads the to-be-installed packets from a file called `toinstall` in the archive directory:
 {% highlight bash %}

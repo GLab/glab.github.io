@@ -14,7 +14,7 @@ ToMaTo provides a set of tools to access it or to create resources with it.
 
 There is currently no distributed package for installing the ToMaTo tools. Thus, you have to clone them manually.
 
-By now, only Linux is supported.
+For now, only Linux is supported.
 
 First, you should install the dependencies:
 {% highlight shell %}
@@ -59,7 +59,7 @@ Its syntax is similar to that of the CLI, with a few differences:
   * If you do not provide this, all templates will be copied!
 * By default, all restricted templates will be skipped.
   * The `--include_restricted` argument can be set to include restricted templates.
-* By default, if a template already exist on the destination testbed, it will be skipped.
+* By default, if a template already exists on the destination testbed, it will be skipped.
   * Use `--overwrite_on_conflict` to overwrite existing templates.
 
 ## Backend Registrator

@@ -12,7 +12,7 @@ You can download the entire _archive directory_ of an element. The result of thi
 
 This functionality avoids transmitting the whole disk image, which may be rather large, especially if you are only interested in some experiment results. Moreover, this functionality is available while your device is started. Also, a disk image does not necessarily include the archive directory.
 
-The download contains the `exec_status` directory.
+The download also contains the `exec_status` directory, which contains all output of your executed scripts and all data your scripts stored there for evaluation purposes. 
 
 ## API References
 

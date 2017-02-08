@@ -71,7 +71,7 @@ Dictionaries in Python look untidy if you do not format them properly. To get a 
 >>> print json.dumps(  account_info()  , indent=2)
 {% endhighlight %}
 
-You will see that this output is much easier to read
+You will see that this output is much easier to read.
 Of course, you can use any other function than `account_info()` in this example.
 
 {:.alert .alert-info}
@@ -115,18 +115,18 @@ API Tutorial Demonstration
 
 From the previous commands, you may have understood that the most important functionality is quite easy to understand once you know the basics.
 
-If you are stuck with something, you can use the `help()` command to see a list of available API functions. If you have questions for an API function, you can use the `help(function_name)` (e.g., `help(account_info)`), to see the documentation for the respective function.
+If you are stuck with something, you can use the `help()` command to see a list of available API functions. If you have questions about an API function, you can use the `help(function_name)` (e.g., `help(account_info)`), to see the documentation of the respective function.
 
 {:.alert .alert-info}
-If you get an error when trying to see the documentation for a function, it is likely because you have put parenthesis behind the function name.
+If you get an error when trying to see the documentation of a function, it is likely because you have put parenthesis behind the function name.
 
 ## Examining the Topology
 
 Most entities can be identified by IDs. These are usually called `id` or `name`. For example, every topology has an `id` attribute, while user accounts have their usernames (`name`).
-When you know the identifier of an object, you can request info for it. For example, you can request information about any account by knowing their username. For example, to request information about the account `tutorial`, enter `account_info("tutorial")`.
+When you know the identifier of an object, you can request info about it. For example, you can request information about any account by knowing their username. For example, to request information about the account `tutorial`, enter `account_info("tutorial")`.
 
 {:.alert .alert-info}
-If you are getting an error, make sure that you are handing the object identifier as a string, not a variable.
+If you are getting an error, make sure that you are handing the object identifier as a string, not as a variable name.
 
 To get the ID of the topology you recently imported, open the topology editor. You can see the topology ID in the window's URL.
 Another way to see IDs is to enable the respective option in the editor's _Options_ tab. This functionality also shows elements' IDs in their right-click menu. IDs in the editor are usually marked by square brackets (`[]`) Try it now!
@@ -137,7 +137,7 @@ In most cases, you want to create scripts only for certain topologies. The edito
 {:.alert .alert-info}
 You should use a terminal emulator that supports copy-and-paste. Then, you can simply copy-paste IDs from the editor to the CLI.
 
-So, let's examine this topology in the API! (You need to substitute the topology ID)
+So, let's examine this topology in the API: (You need to substitute the topology ID)
 {% highlight python %}
 >>> print json.dumps(topology_info("58909928a058d400084c4ea4"), indent=2)
 {
@@ -169,7 +169,7 @@ Let's go through the output line-by-line.
 * `elements` is a list of element IDs, we will discuss these later.
 * `name` is the topology's display name. Note that this is not a unique identifier of your topology.
 * `state_max` shows the maximum state of your elements (created < prepared < started)
-* `_initialized` is the editor's way to store whether the initialization window (the one that is shown when creating a topology) has to be shown. Again, not that this is client data that has no effect on the functionality behind the API).
+* `_initialized` is the editor's way to store whether the initialization window (the one that is shown when creating a topology) has to be shown. Again, note that this is client data that has no effect on the functionality behind the API).
 * `site` is the site setting in the topology's configuration window.
 * `connections` is a list of connection IDs. We will examine this later.
 * `timeout` is the topology timeout date. It is a Unix timestamp.
@@ -178,7 +178,7 @@ Let's go through the output line-by-line.
 
 You see that the topology is basically a collection of elements and connections, and providing access control to these.
 
-You may remember that not only the two devices, but also their network interfaces are elements, which is why there are 4 elements. Let's examine these. But first, we will store the topology info in a variable for easier accses.
+You may remember that not only the two devices, but also their network interfaces are elements, which is why there are 4 elements. Let's examine these. But first, we will store the topology info in a variable for easier access.
 
 {:.alert .alert-info}
 For all examples that use fixed IDs, these may differ in your setup. Make sure you substitute them in your input.
@@ -213,11 +213,11 @@ You will notice that elements and connections are not only referenced by their I
 
 Now, open the _Debug_ window of one of the interface elements. You can see references to a `parent` which is the parent full virtualization device, and a `connection`, which is the connection it is attached to. Additionally, you can see its `name`, its `state`, its `type`, and a reference to its `topology`. There are attributes for `host` and `host_info`, but these are null as long as the element is not prepared. Close this window now.
 
-Open the _Debug_ window of the connection. You will see a list of two elements that are attached to it, its type (yes, connections have a type internally), and its topology. Now, close this window, open its config window, change some link emulation settings, save, and re-open the _Debug_ window. You will se a much bigger list of settings now.
+Open the _Debug_ window of the connection. You will see a list of two elements that are attached to it, its type (connections have a type internally), and its topology. Now, close this window, open its config window, change some link emulation settings, save, and re-open the _Debug_ window. You will se a much bigger list of settings now.
 Link emulation can be configured in both directions independently. In the API, this difference is visible in the attribute names that can be `from` and `to`. _From_ references **from the first** to the second element in the `elements` list, and _to_ references from the second **to the first** element.
 
 {:.alert .alert-info}
-In many cases, you might wonder how a certain attribute is named exactly, while knowing the attribute. Using the editor to look it up this way can be much faster than using the API reference or the documentation you can access form the CLI.
+In many cases, you might wonder how a certain attribute is named exactly, while knowing the attribute. Using the editor to look it up this way can be much faster than using the API reference or the documentation you can access from the CLI.
 
 ## Delete the topology
 
