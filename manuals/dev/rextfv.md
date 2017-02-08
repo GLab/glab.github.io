@@ -19,7 +19,7 @@ Although these look like completely separate features, they all use the same tec
 
 ## Overview
 
-Executable archives communicate with your device via the so-called _archive directory_. This is a special directory on your device which can be accessed from the host directly via the _network-less Execution and Transfer Protocol_ (nlXTP). This does not make use of traditinal network interfaces, meaning that it will not influence your network experiments.
+Executable archives communicate with your device via the so-called _archive directory_. This is a special directory on your device which can be accessed from the host directly via the _network-less Execution and Transfer Protocol_ (nlXTP). This does not make use of traditional network interfaces, meaning that it will not influence your network experiments.
 
 The archive directory is available at a certain location on your device, usually at `/mnt/nlXTP`. In some cases, the host cannot write into this directory, but reading is always possible. For more information about this, consult the respective device type descriptions in the [user manual](/manuals/user).
 

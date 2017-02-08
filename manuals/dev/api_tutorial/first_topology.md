@@ -8,7 +8,7 @@ category: manuals
 
 # API Tutorial: First Toplogy
 
-Welcome to the second API tutorial. In this tutorial, you will use the cli to create your first topology, populate it with elements and a connection, start it, access the console, and then tear it down.
+Welcome to the second API tutorial. In this tutorial, you will use the CLI to create your first topology, populate it with elements and a connection, start it, access the console, and then tear it down.
 
 Please connect a CLI to the API in order to continue.
 
@@ -52,11 +52,11 @@ We should assign a nice name to the topology, so that it will have a meaningful 
 This looks way better.
 
 {:.alert .alert-info}
-The syntax for modify functions is alwas the same. The functions `topology_modify`, `element_modify`, `account_modify` and so on take two arguments, the first being the id of the identity that should be modified, and the second being a dictionary. This dictionary only contains the attributes that should be changed.
+The syntax for modify functions is always the same. The functions `topology_modify`, `element_modify`, `account_modify` and so on take two arguments, the first being the id of the entity that should be modified, and the second being a dictionary. This dictionary only contains the attributes that should be changed.
 
 ## Creating Elements
 
-Our topology is empty, so we should now create two devices. We shall create two container-based devices with the default template.
+Our topology is empty, so we should now create two devices. We create two container-based devices with the default template.
 {% highlight python %}
 >>> el1_id = element_create(top_id, "container", None, {"name": "el1"})["id"]
 >>> el2_id = element_create(top_id, "container", None, {"name": "el2"})["id"]
