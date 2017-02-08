@@ -77,5 +77,4 @@ When using a start script, you can see information about its execution, as well 
 
 The execution status can also be seen by a small icon next to the element's [state icon](../..#state): This can be a busy icon or a tick.
 
-[TODO: Use a serious name for the topology in this picture]
 ![busy](../../../img/executable_archive_element_busy.png) ![done](../../../img/executable_archive_element_done.png)
