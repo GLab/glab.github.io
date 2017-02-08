@@ -131,6 +131,15 @@ dev:
     - title: Tools
       id: tools
       indent: 0
+    - title: Command-Line Interface
+      id: tools/cli
+      indent: 1
+    - title: ToMaTo Library
+      id: tools/lib
+      indent: 1
+    - title: Executable Archive Packet Manager
+      id: tools/getpackages
+      indent: 1
     - title: API Tutorials
       id: api_tutorial
       indent: 0
@@ -139,6 +148,12 @@ dev:
       indent: 1
     - title: First Topology
       id: api_tutorial/first_topology
+      indent: 1
+    - title: Topology Import and Executable Archives
+      id: api_tutorial/executable_archive
+      indent: 1
+    - title: CLI Scripting
+      id: api_tutorial/cli_scripts
       indent: 1
     - title: Examples
       id: examples
