@@ -73,7 +73,11 @@ Changing the template of a _prepared_ device will delete all existing data on th
 
 ### Segment separation
 
-[TODO]
+As long as the _Colorify segments_ option in the topology editor is activated,
+ToMaTo highlights separated networks as different segments.
+Elements can be defined as connecting elements to combine different network segments.
+This does not have any direct effect on the network infrastructure and is **ONLY** for usability purposes.
+It allows to mark devices which interconnect networks to increase the overview of the topology.
 
 ### Custom Icon
 

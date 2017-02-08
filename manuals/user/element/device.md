@@ -22,9 +22,12 @@ If you want to create an element, but are unsure which type to use, answering th
 On the first look, full virtualization seems to be the better choice as it allows more operating systems and does not limit operating system functionality. Container-based virtualization though, is a very light-weight solution that gives quick access to Linux machines and is much easier to handle than full virtualization. E.g. Container-based virtualization allows users to configure theroot password or the IP addresses of the interfaces. Additionally, full virtualization consumes a lot of resources on the testbed, so it should be avoided if it is not necessary.
 
 This list of criteria can help with the choice:
+
+
+{:.table .table-bordered}
 | Criteria | Recommendation |
-| --------- | -------------- |
-| Do you need realtime functionality or extremely precise timing? | Use a Physical system (not supported by ToMaTo)|
+|---------|--------------|
+| Do you need realtime functionality or extremely precise timing? | Use a Physical system (not supported by ToMaTo) |
 | Do you need to run hardware virtualization inside the device? | Use a physical system |
 | Do you want to test your own low-level protocol? | Use Programmable Devices |
 | Do you want to apply simple modifications to packets? | Use Programmable Device |
