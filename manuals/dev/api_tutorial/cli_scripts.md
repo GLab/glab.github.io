@@ -30,8 +30,8 @@ The test software is a simple python-based client-server tool that measures the 
 
 First, you should download the necessary files: 
 
-* The python installer executable archive
-* Our test software
+* The python installer executable archive [(download here)](https://master.tomato-lab.org/web_resources/executable_archive/install_python)
+* Our test software [(download here)](../nw_measurer.tar.gz)
 
 {:.alert alert-info}
 The Python installer archive has been created using the [Executable archive packet manager](../../tools/getpackages).
