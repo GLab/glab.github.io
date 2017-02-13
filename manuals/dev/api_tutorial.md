@@ -26,4 +26,4 @@ First, you should [install the ToMaTo tools](../tools).
 ## Scripting
 
 * [CLI Scripting](cli_scripts) - run a completely automated experiment in ToMaTo
-* Connecting to the API
+* [ToMaTo Library](api_lib) - Connecting your Python App to the API

@@ -223,5 +223,5 @@ The full script is available for download [here](../measurer_experiment.py). Rem
 
 ## Continue
 
-In the next tutorial, you will learn how to connect your independent Python script to the ToMaTo API.
+In the [next tutorial](../api_lib), you will learn how to connect your independent Python app to the ToMaTo API.
 
