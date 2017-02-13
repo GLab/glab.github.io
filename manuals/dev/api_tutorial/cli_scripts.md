@@ -218,6 +218,9 @@ If you need more ideas, you can check out our examples!
 
 You may also want to catch errors and repeat some things if they fail, but this is rather difficult for CLI scripts. For more advanced scripts, you should use ToMaTo as a library for your own Python program.
 
+{:.alert .alert-info}
+The full script is available for download [here](../measurer_experiment.py). Remember to update the first two lines to the correct paths!
+
 ## Continue
 
 In the next tutorial, you will learn how to connect your independent Python script to the ToMaTo API.

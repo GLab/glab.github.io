@@ -1,5 +1,5 @@
-python_installer_file = "~/work/ToMaTo/contrib/archives/install_python/install_python.tar.gz"
-test_software = "~/work/glab.github.io/manuals/dev/api_tutorial/nw_measurer.tar.gz"
+python_installer_file = "/tmp/install_python.tar.gz"
+test_software = "/tmp/nw_measurer.tar.gz"
 
 # temporary directory to work in
 import os
