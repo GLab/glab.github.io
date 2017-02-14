@@ -1,6 +1,6 @@
 user:
   title: User Manual
-  indev: true
+  indev: false
   pages:
     - title: Home
       id: home

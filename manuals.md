@@ -4,7 +4,9 @@ title: ToMaTo Manuals
 category: manuals
 ---
 
-# ToMaTo manuals
+# ToMaTo Manuals
+
+ToMaTo offers multiple manuals aimed at different kinds of users.
 
 <div class="row" markdown="1">
 
@@ -13,6 +15,8 @@ category: manuals
 ## [Users](user)
 
 If you are a user of an existing ToMaTo installation, please refer to the user manual.
+
+This manual covers all topics for new or experienced users to run experiements via the browser-based graphical user interface.
 
 </div>
 
@@ -39,13 +43,18 @@ If your job involves managing ToMaTo user accounts, please refer to the account 
 If you need to set up and manage a whole ToMaTo testbed, please refer to the testbed management manual.
 
 </div>
-
+-->
 <div class="col-xs-12 col-md-6" markdown="1">
 
-## [Developing for ToMaTo](dev)
+## [Advanced Users](dev)
 
-This manual will teach you about how to develop executable archives, images, tutorials, or API scripts for ToMaTo.
+This manual will teach you how to
 
-</div>-->
+* develop executable archives
+* create custom device images
+* develop your own Repy scripts
+* use the ToMaTo API
+
+</div>
 
 </div>
