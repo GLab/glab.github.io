@@ -155,6 +155,9 @@ dev:
     - title: CLI Scripting
       id: api_tutorial/cli_scripts
       indent: 1
+    - title: ToMaTo Library
+      id: api_tutorial/api_lib
+      indent: 1
     - title: Examples
       id: examples
       indent: 0
