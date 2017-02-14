@@ -40,7 +40,7 @@ If your job involves managing ToMaTo user accounts, please refer to the account 
 
 ## [Testbed Managers](setup)
 
-If you need to set up and manage a whole ToMaTo testbed, please refer to the testbed management manual.
+If you need to set up and manage your own ToMaTo testbed, please refer to the testbed management manual.
 
 </div>
 -->
