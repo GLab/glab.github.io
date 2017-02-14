@@ -83,6 +83,7 @@ accountmanager:
   indev: true
   pages:
     - title: Home
+      indent: 0
       id: home
       url: /
 hostmanager:
@@ -90,6 +91,7 @@ hostmanager:
   indev: true
   pages:
     - title: Home
+      indent: 0
       id: home
       url: /
 setup:
@@ -97,8 +99,12 @@ setup:
   indev: true
   pages:
     - title: Home
+      indent: 0
       id: home
       url: /
+    - title: Introduction
+      indent: 0
+      id: introduction
 dev:
   title: Developer's Manual
   indev: true
