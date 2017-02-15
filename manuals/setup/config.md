@@ -26,7 +26,7 @@ The configuration file is read from all of these locations, in the respective or
 
 The location of config.yaml is defined in tomato-ctl.conf
 
-## tomato-ctl.conf
+## <a name="tomato-ctl.conf"></a>tomato-ctl.conf
 
 `tomato-ctl.conf` defines the behavior of the [tomato-ctl tool](../tomato-ctl). This includes the selection of available ToMaTo modules on the host, docker container options like DNS server, and the selection of directories. Thus, this file depends on the host: if you distribute your ToMaTo services over multiple hosts, each host will have its individual `tomato-ctl.conf`. Although ToMaTo runs in a container, all data is stored on the host's hard disk.
 
@@ -43,7 +43,14 @@ You should specify a `docker_dir` which should point to the directory that tomat
 }
 {% endhighlight %}
 
-## config.yaml
+For example, to disable the webfrontend, add a `web` section to tomato-ctl.conf and overwrite the `enabled` property of it:
+{% highlight json %}
+"web": {
+  "enabled": false
+}
+{% endhighlight %}
+
+## <a name="config.yaml"></a>config.yaml
 
 `config.yaml` is the central configuration file of the ToMaTo backend and webfrontend. This file should be shared between all ToMaTo modules. Contrary to `tomato-ctl.conf`, you must specify all options in `config.yaml` - if an option is missing, ToMaTo may select a default, or it may not start, depending on the importance of the option.
 
