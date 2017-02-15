@@ -105,6 +105,12 @@ setup:
     - title: Introduction
       indent: 0
       id: introduction
+    - title: Installation
+      indent: 0
+      id: installation
+    - title: Configuration
+      indent: 0
+      id: config
 dev:
   title: Developer's Manual
   indev: true
