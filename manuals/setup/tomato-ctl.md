@@ -28,7 +28,11 @@ The _tomato-ctl_ tool is the easiest way to create Docker containers from images
 
 ### Shared Directories
 
-[TODO]
+Depending on the module, containers have a number of shared directories with the host, meaning that they store their data on the host's file system (they are not shared between each other!). These directories usually include, among others, config, data, and logs.
+
+By default, these directories are located in the docker directory, in a module-specific subdirectory.
+
+Additionally, the code will be included from the respective directory in `~/ToMaTo`.
 
 ### Generating Certs
 
@@ -39,4 +43,22 @@ When distributing ToMaTo over multiple hosts, run `gencerts` on one host, then t
 ### Starting and Stopping
 
 Once you have set up `tomato-ctl.conf`, you can simply start all containers by running `./tomato-ctl.py start`. To stop ToMaTo, run `./tomato-ctl.py stop`. To control individual services, you can use `./tomato-ctl.py backend_core start`, for example. To see more options, run `./tomato-ctl.py help`.
+
+You can use the `restart` command to stop and start a container.
+
+Due to Docker's internal linking, database container is a hard dependency for some modules to run. Thus, this container should be started first and stopped last. When using the `start` and `stop` commands for all modules, this is assured automatically.
+
+The status of a containers (all or individually, as with start and stop) can be requested by running `./tomato-ctl.py status`. For the backend modules, tomato-ctl will automatically perform a check whether the software has started. However, because `backend_accounting` may be compiled on startup, this check may fail on the first start.
+
+### Logs
+
+You can view the logs of a container by running `./tomato-ctl.py backend_core logs` (or another module). use `logs-live` to view live logs.
+
+### Shell
+
+You can attatch to a shell on the container by running `./tomato-ctl.py backend_core shell` (or another module). This will result in a mongodb session for the database container, and a bash shell on the other containers.
+
+### Backup
+
+To create or restore a backup of the database, you can use `./tomato-ctl.py backup SOMENAME` and `./tomato-ctl.py restore SOMENAME`. The backup is stored 
 
