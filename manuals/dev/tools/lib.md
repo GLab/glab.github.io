@@ -67,7 +67,7 @@ There are repository-internal, relative symlinks in the library itself. Double-c
 
 ### The PATH Method
 
-Instead of using a symlinc, you can add the respective directory to your app's path. This can be achieved by running
+Instead of using a symlink, you can add the respective directory to your app's path. This can be achieved by running
 
 {% highlight python %}
 import sys
