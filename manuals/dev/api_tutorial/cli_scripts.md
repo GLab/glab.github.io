@@ -24,7 +24,7 @@ Our experiment shall be conducted as follows:
 6. Collect the results
 7. Clean up.
 
-The test software is a simple python-based client-server tool that measures the delay between both devices. This is not that interesting, but should be a good example experiment for automating experiments.
+The test software is a simple python-based client-server tool that measures the delay between both devices. This is not that interesting, but should be a good example for an automated experiment.
 
 ## Preparation
 
