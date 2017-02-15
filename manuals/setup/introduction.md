@@ -30,7 +30,7 @@ There may be any number of clients running simultaneously.
 
 ### Backend
 
-The Backend is the central component of ToMaTo and the representative of the whole testbed. It contains user management as well as host and resource management, is responsible for authorizational decisions, and store's all metadata about topologies, elements and connections. To the outside, the backend can be accessed via the ToMaTo API.
+The Backend is the central component of ToMaTo and the representative of the whole testbed. It contains user management as well as host and resource management, is responsible for authorizational decisions, and store's all metadata about topologies, elements and connections. From the outside, the backend can be accessed via the ToMaTo API.
 
 Although the backend looks like a single component to the outside, it is split into many services that communicate via an internal API.
 
@@ -53,7 +53,7 @@ The roles of the required containers will be discussed here:
 
 ### Webfrontend
 
-The webfrontend is a graphical user interface for ToMaTo. Internally, it makes use of the ToMaTo API, and is just one of many possible clients for ToMaTo. Except for temporary session data, it does not store any information on its own - every HTTP request is translated into one or many API calls.
+The webfrontend is a graphical user interface for ToMaTo. Internally, it makes use of the ToMaTo API, and is just one of many possible clients for ToMaTo. Except for temporary session data, it does not store any information on its own - every HTTP request is translated into one or multiple API calls.
 
 
 ### Database
@@ -87,7 +87,7 @@ The `backend_users` module manages users and organizations.
 
 The `backend_accounting` module manages quota data. It receives 1-minute-records for elements and connections from `backend_core` and aggregates them to longer periods, as well as to usage data for topologies, hosts, users, and organizations.
 
-Due to the high demands on performance, this module is the only one that is not written in Python, but in a compiled language. On updates, the respective Docker container may re-compile the software, leading in a short outage. However, ToMaTo is robust against unavailability of this module (although usage data may not be readable in such a case).
+Due to the high demands on performance, this module is the only one that is not written in Python, but in a compiled language. On updates, the respective Docker container may re-compile the software, resulting in a short outage. However, ToMaTo is robust against unavailability of this module (although usage data may not be readable in such a case).
 
 
 ### Backend API

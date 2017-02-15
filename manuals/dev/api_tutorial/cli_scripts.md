@@ -24,7 +24,7 @@ Our experiment shall be conducted as follows:
 6. Collect the results
 7. Clean up.
 
-The test software is a simple python-based client-server tool that measures the delay between both devices. This is not that interesting, but should be a good example experiment for automization.
+The test software is a simple python-based client-server tool that measures the delay between both devices. This is not that interesting, but should be a good example for an automated experiment.
 
 ## Preparation
 
@@ -64,12 +64,12 @@ import os
 import random
 tmp_dir = "/tmp/auto_experiment%d" % random.randint(0,10000)
 os.mkdir(tmp_dir)
-{% endhighlight %}
 
 # function for better-looking run statements
 import subprocess
 def run(*cmd):
   subprocess.call(cmd)
+{% endhighlight %}
 
 
 ## Step 1 and 2: Topology Creation and Start
@@ -81,7 +81,7 @@ The following code will generate our desired topology:
 top_id = topology_create()["id"]
 
 # create test elements
-# we should separate between client at server at this point to make things easier
+# we should separate between client and server at this point to make things easier
 server_element = element_create(top_id, "container", None, {"name": "server"})["id"]
 client_element = element_create(top_id, "container", None, {"name": "client"})["id"]
 
@@ -212,7 +212,7 @@ You will be prompted for your login, and the experiment will be conducted. Congr
 
 ## Conclusion
 
-You have just run an automized experiment using the CLI's scripting capabilities. Of course, you can test more complex software and more complex topologies with it, and use a more closed feedback loop. Now, you know almost everything you need to know to conduct automated tests with ToMaTo.
+You have just run an automated experiment using the CLI's scripting capabilities. Of course, you can test more complex software and more complex topologies with it, and use a more closed feedback loop. Now, you know almost everything you need to know to conduct automated tests with ToMaTo.
 
 If you need more ideas, you can check out our examples!
 
